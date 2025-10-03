@@ -130,7 +130,7 @@ private:
             if (MV_OK == nRet)
             {
                 frame_count++;
-                if (frame_count % 30 == 0)  // 每30帧打印一次日志
+                if (frame_count % 20 == 0)  // 每20帧打印一次日志
                 {
                     RCLCPP_INFO(this->get_logger(), "已采集 %d 帧图像", frame_count);
                 }
@@ -177,8 +177,8 @@ private:
         this->declare_parameter("image_topic", "/image_raw");  // 默认话题名
         this->declare_parameter("exposure_time", 1000.0);  // 默认1000μs
         this->declare_parameter("gain", 1.0);              // 默认1.0（无增益）
-        this->declare_parameter("frame_rate", 30.0);       // 默认30fps
-        this->declare_parameter("pixel_format", "mono8");  // 默认灰度，可选rgb8
+        this->declare_parameter("frame_rate", 20.0);       // 默认20fps
+        this->declare_parameter("pixel_format", "rgb8");  // 默认灰度，可选rgb8
     }
     bool sync_param_to_camera()
     {

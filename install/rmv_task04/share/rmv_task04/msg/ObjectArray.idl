@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from rmv_task04/msg/ObjectArray.msg
+// generated code does not contain a copyright notice
+
+#include "rmv_task04/msg/Object.idl"
+#include "std_msgs/msg/Header.idl"
+
+module rmv_task04 {
+  module msg {
+    @verbatim (language="comment", text=
+      "msg/ObjectArray.msg")
+    struct ObjectArray {
+      @verbatim (language="comment", text=
+        "与图像同步的时间戳")
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "物体列表")
+      sequence<rmv_task04::msg::Object> objects;
+    };
+  };
+};

@@ -24,22 +24,22 @@ def generate_launch_description():
     )
     declare_exposure_time_arg = DeclareLaunchArgument(
         'exposure_time',
-        default_value='1000.0',
+        default_value='50000.0',
         description='曝光时间（μs）'
     )
     declare_gain_arg = DeclareLaunchArgument(
         'gain',
-        default_value='1.0',
+        default_value='5.0',
         description='增益'
     )
     declare_frame_rate_arg = DeclareLaunchArgument(
         'frame_rate',
-        default_value='30.0',
+        default_value='20.0',
         description='帧率（fps）'
     )
     declare_pixel_format_arg = DeclareLaunchArgument(
         'pixel_format',
-        default_value='mono8',
+        default_value='rgb8',
         description='像素格式（mono8/rgb8）'
     )
 

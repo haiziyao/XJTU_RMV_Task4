@@ -8,7 +8,7 @@ colcon build --packages-select rmv_task04
 source install/setup.bash
 
 # 启动节点
-ros2 launch rmv_task04 launch.py
+ros2 launch rmv_task04 launch.py 
 
 
 # 启动时指定相机IP、曝光时间、像素格式

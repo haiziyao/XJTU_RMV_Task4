@@ -1,0 +1,304 @@
+[0.007s] Invoking command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04 -DCMAKE_INSTALL_PREFIX=/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04
+[0.065s] -- The C compiler identification is GNU 11.4.0
+[0.116s] -- The CXX compiler identification is GNU 11.4.0
+[0.123s] -- Detecting C compiler ABI info
+[0.196s] -- Detecting C compiler ABI info - done
+[0.204s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.204s] -- Detecting C compile features
+[0.204s] -- Detecting C compile features - done
+[0.208s] -- Detecting CXX compiler ABI info
+[0.282s] -- Detecting CXX compiler ABI info - done
+[0.287s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.288s] -- Detecting CXX compile features
+[0.288s] -- Detecting CXX compile features - done
+[0.289s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.397s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.454s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.482s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.485s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.490s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.497s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.506s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.532s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.533s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.606s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.632s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.665s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.670s] -- Looking for pthread.h
+[0.747s] -- Looking for pthread.h - found
+[0.747s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.819s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.820s] -- Found Threads: TRUE  
+[0.855s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.875s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.880s] -- Found OpenCV: /usr/local (found version "4.12.0") 
+[0.882s] -- Found installed version of Eigen: /usr/share/eigen3/cmake
+[0.882s] -- Found required Ceres dependency: Eigen version 3.4.0 in /usr/include/eigen3
+[0.884s] -- Found installed version of glog: /usr/lib/x86_64-linux-gnu/cmake/glog
+[0.884s] -- Detected glog version: 0.4.0
+[0.885s] -- Found required Ceres dependency: glog
+[0.885s] -- Found installed version of gflags: /usr/lib/x86_64-linux-gnu/cmake/gflags
+[0.885s] -- Detected gflags version: 2.2.2
+[0.886s] -- Found required Ceres dependency: gflags
+[0.886s] -- Found Ceres version: 1.14.0 installed in: /usr/local with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, OpenMP, Multithreading]
+[0.887s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.892s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.098s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.367s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.462s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.480s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.481s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.501s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.501s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.501s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.501s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.518s] -- Found PythonExtra: .so  
+[1.573s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.573s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/rosidl_generator_c>;$<BUILD_INTERFACE:/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/rosidl_typesupport_fastrtps_c>;$<BUILD_INTERFACE:/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/rosidl_generator_cpp>;$<BUILD_INTERFACE:/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/rosidl_typesupport_fastrtps_cpp>;$<BUILD_INTERFACE:/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/rosidl_typesupport_introspection_cpp>;/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/rosidl_generator_c;/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/rosidl_generator_py;/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/include
+[1.573s] -- Configured cppcheck exclude dirs and/or files: 
+[1.576s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.581s] -- Added test 'lint_cmake' to check CMake code style
+[1.583s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.601s] -- Added test 'uncrustify' to check C / C++ code style
+[1.601s] -- Configured uncrustify additional arguments: 
+[1.603s] -- Added test 'xmllint' to check XML markup files
+[1.605s] -- Configuring done
+[1.633s] -- Generating done
+[1.642s] -- Build files have been written to: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04
+[1.652s] Invoked command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04 -DCMAKE_INSTALL_PREFIX=/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04
+[1.652s] Invoking command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04 -- -j28 -l28
+[1.691s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.699s] [  4%] [32mBuilding CXX object CMakeFiles/ImgPublisher.dir/src/img_publisher.cpp.o[0m
+[1.701s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.705s] [  6%] Built target ament_cmake_python_copy_rmv_task04
+[1.846s] running egg_info
+[1.846s] creating rmv_task04.egg-info
+[1.846s] writing rmv_task04.egg-info/PKG-INFO
+[1.846s] writing dependency_links to rmv_task04.egg-info/dependency_links.txt
+[1.846s] writing top-level names to rmv_task04.egg-info/top_level.txt
+[1.846s] writing manifest file 'rmv_task04.egg-info/SOURCES.txt'
+[1.848s] reading manifest file 'rmv_task04.egg-info/SOURCES.txt'
+[1.848s] writing manifest file 'rmv_task04.egg-info/SOURCES.txt'
+[1.867s] [  6%] Built target ament_cmake_python_build_rmv_task04_egg
+[1.934s] [  6%] Built target rmv_task04__cpp
+[1.939s] [  9%] [32mBuilding C object CMakeFiles/rmv_task04__rosidl_generator_c.dir/rosidl_generator_c/rmv_task04/msg/detail/object__functions.c.o[0m
+[1.941s] [ 11%] [32mBuilding C object CMakeFiles/rmv_task04__rosidl_generator_c.dir/rosidl_generator_c/rmv_task04/msg/detail/object_array__functions.c.o[0m
+[1.942s] [ 13%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.943s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.943s] [ 18%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.974s] [ 20%] [32m[1mLinking C shared library librmv_task04__rosidl_generator_c.so[0m
+[2.002s] [ 20%] Built target rmv_task04__rosidl_generator_c
+[2.010s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.011s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.011s] [ 27%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.158s] [ 30%] [32mBuilding CXX object CMakeFiles/rmv_task04__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rmv_task04/msg/object__type_support.cpp.o[0m
+[2.158s] [ 32%] [32mBuilding CXX object CMakeFiles/rmv_task04__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rmv_task04/msg/object_array__type_support.cpp.o[0m
+[2.173s] [ 34%] [32mBuilding CXX object CMakeFiles/rmv_task04__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rmv_task04/msg/detail/object__type_support.cpp.o[0m
+[2.173s] [ 37%] [32mBuilding CXX object CMakeFiles/rmv_task04__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rmv_task04/msg/detail/object_array__type_support.cpp.o[0m
+[2.174s] [ 39%] [32mBuilding CXX object CMakeFiles/rmv_task04__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rmv_task04/msg/detail/dds_fastrtps/object__type_support.cpp.o[0m
+[2.174s] [ 41%] [32mBuilding CXX object CMakeFiles/rmv_task04__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rmv_task04/msg/detail/dds_fastrtps/object_array__type_support.cpp.o[0m
+[2.231s] [ 44%] [32mBuilding CXX object CMakeFiles/rmv_task04__rosidl_typesupport_c.dir/rosidl_typesupport_c/rmv_task04/msg/object_array__type_support.cpp.o[0m
+[2.231s] [ 46%] [32mBuilding CXX object CMakeFiles/rmv_task04__rosidl_typesupport_c.dir/rosidl_typesupport_c/rmv_task04/msg/object__type_support.cpp.o[0m
+[2.240s] [ 51%] [32mBuilding CXX object CMakeFiles/rmv_task04__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rmv_task04/msg/detail/object_array__type_support_c.cpp.o[0m
+[2.241s] [ 53%] [32mBuilding C object CMakeFiles/rmv_task04__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rmv_task04/msg/detail/object_array__type_support.c.o[0m
+[2.241s] [ 55%] [32mBuilding C object CMakeFiles/rmv_task04__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rmv_task04/msg/detail/object__type_support.c.o[0m
+[2.241s] [ 48%] [32mBuilding CXX object CMakeFiles/rmv_task04__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rmv_task04/msg/detail/object__type_support_c.cpp.o[0m
+[2.264s] [ 58%] [32m[1mLinking CXX shared library librmv_task04__rosidl_typesupport_c.so[0m
+[2.274s] [ 60%] [32m[1mLinking C shared library librmv_task04__rosidl_typesupport_introspection_c.so[0m
+[2.296s] [ 60%] Built target rmv_task04__rosidl_typesupport_c
+[2.301s] [ 60%] Built target rmv_task04__rosidl_typesupport_introspection_c
+[2.309s] [ 62%] [32m[1mLinking CXX shared library librmv_task04__rosidl_typesupport_cpp.so[0m
+[2.341s] [ 62%] Built target rmv_task04__rosidl_typesupport_cpp
+[2.363s] [ 65%] [32mBuilding CXX object CMakeFiles/ImgDealer.dir/src/img_dealer.cpp.o[0m
+[2.415s] [ 67%] [32m[1mLinking CXX shared library librmv_task04__rosidl_typesupport_introspection_cpp.so[0m
+[2.463s] [ 69%] [32m[1mLinking CXX shared library librmv_task04__rosidl_typesupport_fastrtps_c.so[0m
+[2.467s] [ 69%] Built target rmv_task04__rosidl_typesupport_introspection_cpp
+[2.468s] [ 72%] [32m[1mLinking CXX shared library librmv_task04__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.514s] [ 72%] Built target rmv_task04__rosidl_typesupport_fastrtps_c
+[2.522s] [ 72%] Built target rmv_task04__rosidl_typesupport_fastrtps_cpp
+[2.539s] [ 72%] Built target rmv_task04
+[2.555s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.899s] [ 74%] Built target rmv_task04__py
+[2.915s] [ 79%] [32mBuilding C object CMakeFiles/rmv_task04__rosidl_generator_py.dir/rosidl_generator_py/rmv_task04/msg/_object_array_s.c.o[0m
+[2.915s] [ 79%] [32mBuilding C object CMakeFiles/rmv_task04__rosidl_generator_py.dir/rosidl_generator_py/rmv_task04/msg/_object_s.c.o[0m
+[2.984s] [ 81%] [32m[1mLinking C shared library rosidl_generator_py/rmv_task04/librmv_task04__rosidl_generator_py.so[0m
+[3.017s] [ 81%] Built target rmv_task04__rosidl_generator_py
+[3.033s] [ 83%] [32mBuilding C object CMakeFiles/rmv_task04__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/rmv_task04/_rmv_task04_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.034s] [ 86%] [32mBuilding C object CMakeFiles/rmv_task04__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/rmv_task04/_rmv_task04_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.034s] [ 88%] [32mBuilding C object CMakeFiles/rmv_task04__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/rmv_task04/_rmv_task04_s.ep.rosidl_typesupport_c.c.o[0m
+[3.099s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/rmv_task04/rmv_task04_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.099s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/rmv_task04/rmv_task04_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.099s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/rmv_task04/rmv_task04_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.130s] [ 95%] Built target rmv_task04__rosidl_typesupport_fastrtps_c__pyext
+[3.130s] [ 95%] Built target rmv_task04__rosidl_typesupport_introspection_c__pyext
+[3.131s] [ 95%] Built target rmv_task04__rosidl_typesupport_c__pyext
+[5.241s] [ 97%] [32m[1mLinking CXX executable ImgPublisher[0m
+[5.348s] /usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.412
+[5.348s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.412
+[5.348s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.412
+[5.525s] [ 97%] Built target ImgPublisher
+[7.886s] [100%] [32m[1mLinking CXX executable ImgDealer[0m
+[8.017s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.412
+[8.295s] [100%] Built target ImgDealer
+[8.303s] Invoked command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04 -- -j28 -l28
+[8.310s] Invoking command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04
+[8.319s] -- Install configuration: ""
+[8.319s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/ament_index/resource_index/rosidl_interfaces/rmv_task04
+[8.319s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04
+[8.319s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg
+[8.319s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/rosidl_generator_c__visibility_control.h
+[8.319s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/object_array.h
+[8.319s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail
+[8.319s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__functions.h
+[8.319s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__functions.c
+[8.319s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__struct.h
+[8.320s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__functions.h
+[8.320s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__type_support.h
+[8.320s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__struct.h
+[8.320s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__type_support.h
+[8.320s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__functions.c
+[8.320s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/object.h
+[8.320s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/library_path.sh
+[8.320s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/library_path.dsv
+[8.320s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_generator_c.so
+[8.320s] -- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_generator_c.so" to ""
+[8.320s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04
+[8.320s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg
+[8.320s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail
+[8.320s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__rosidl_typesupport_fastrtps_c.h
+[8.320s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__rosidl_typesupport_fastrtps_c.h
+[8.320s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.320s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_fastrtps_c.so
+[8.321s] -- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_fastrtps_c.so" to ""
+[8.321s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04
+[8.321s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg
+[8.321s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/object_array.hpp
+[8.321s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/rosidl_generator_cpp__visibility_control.hpp
+[8.321s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail
+[8.321s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__type_support.hpp
+[8.321s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__traits.hpp
+[8.321s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__builder.hpp
+[8.321s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__struct.hpp
+[8.321s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__type_support.hpp
+[8.321s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__traits.hpp
+[8.321s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__builder.hpp
+[8.321s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__struct.hpp
+[8.321s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/object.hpp
+[8.321s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04
+[8.321s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg
+[8.321s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.321s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail
+[8.321s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__rosidl_typesupport_fastrtps_cpp.hpp
+[8.322s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__rosidl_typesupport_fastrtps_cpp.hpp
+[8.322s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/dds_fastrtps
+[8.322s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_fastrtps_cpp.so
+[8.322s] -- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_fastrtps_cpp.so" to ""
+[8.322s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04
+[8.322s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg
+[8.322s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.322s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail
+[8.322s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__type_support.c
+[8.322s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__type_support.c
+[8.322s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__rosidl_typesupport_introspection_c.h
+[8.322s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__rosidl_typesupport_introspection_c.h
+[8.322s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_introspection_c.so
+[8.322s] -- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_introspection_c.so" to ""
+[8.322s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_c.so
+[8.322s] -- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_c.so" to ""
+[8.322s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04
+[8.323s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg
+[8.323s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail
+[8.323s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__rosidl_typesupport_introspection_cpp.hpp
+[8.323s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__type_support.cpp
+[8.323s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__rosidl_typesupport_introspection_cpp.hpp
+[8.323s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__type_support.cpp
+[8.323s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_introspection_cpp.so
+[8.323s] -- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_introspection_cpp.so" to ""
+[8.323s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_cpp.so
+[8.323s] -- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_cpp.so" to ""
+[8.323s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/pythonpath.sh
+[8.323s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/pythonpath.dsv
+[8.323s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04-0.0.0-py3.10.egg-info
+[8.323s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04-0.0.0-py3.10.egg-info/PKG-INFO
+[8.323s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04-0.0.0-py3.10.egg-info/SOURCES.txt
+[8.323s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04-0.0.0-py3.10.egg-info/dependency_links.txt
+[8.323s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04-0.0.0-py3.10.egg-info/top_level.txt
+[8.323s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04
+[8.323s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/_rmv_task04_s.ep.rosidl_typesupport_introspection_c.c
+[8.324s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/librmv_task04__rosidl_generator_py.so
+[8.324s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/__init__.py
+[8.324s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/_rmv_task04_s.ep.rosidl_typesupport_c.c
+[8.324s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/rmv_task04_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.324s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/rmv_task04_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.324s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/msg
+[8.324s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/msg/_object_array_s.c
+[8.324s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/msg/_object.py
+[8.324s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/msg/_object_array.py
+[8.324s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/msg/_object_s.c
+[8.324s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/msg/__init__.py
+[8.324s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/_rmv_task04_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.324s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/rmv_task04_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.352s] Listing '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04'...
+[8.352s] Compiling '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/__init__.py'...
+[8.352s] Listing '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/msg'...
+[8.352s] Compiling '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/msg/__init__.py'...
+[8.353s] Compiling '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/msg/_object.py'...
+[8.353s] Compiling '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/msg/_object_array.py'...
+[8.355s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/rmv_task04_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.355s] -- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/rmv_task04_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.356s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/rmv_task04_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.356s] -- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/rmv_task04_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.356s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/rmv_task04_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.356s] -- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/rmv_task04_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.356s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_generator_py.so
+[8.356s] -- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_generator_py.so" to ""
+[8.356s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/msg/Object.idl
+[8.356s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/msg/ObjectArray.idl
+[8.356s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/msg/Object.msg
+[8.356s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/msg/ObjectArray.msg
+[8.356s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/rmv_task04/ImgPublisher
+[8.357s] -- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/rmv_task04/ImgPublisher" to ""
+[8.357s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/rmv_task04/ImgDealer
+[8.359s] -- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/rmv_task04/ImgDealer" to ""
+[8.359s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04//launch
+[8.359s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04//launch/launch.py
+[8.359s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/ament_index/resource_index/package_run_dependencies/rmv_task04
+[8.359s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/ament_index/resource_index/parent_prefix_path/rmv_task04
+[8.359s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/ament_prefix_path.sh
+[8.360s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/ament_prefix_path.dsv
+[8.360s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/path.sh
+[8.360s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/path.dsv
+[8.360s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/local_setup.bash
+[8.360s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/local_setup.sh
+[8.360s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/local_setup.zsh
+[8.360s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/local_setup.dsv
+[8.360s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/package.dsv
+[8.360s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/ament_index/resource_index/packages/rmv_task04
+[8.360s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/export_rmv_task04__rosidl_generator_cExport.cmake
+[8.360s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/export_rmv_task04__rosidl_generator_cExport-noconfig.cmake
+[8.360s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/export_rmv_task04__rosidl_typesupport_fastrtps_cExport.cmake
+[8.360s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/export_rmv_task04__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[8.360s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/export_rmv_task04__rosidl_generator_cppExport.cmake
+[8.360s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/export_rmv_task04__rosidl_typesupport_fastrtps_cppExport.cmake
+[8.360s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/export_rmv_task04__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[8.361s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04__rosidl_typesupport_introspection_cExport.cmake
+[8.361s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[8.361s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04__rosidl_typesupport_cExport.cmake
+[8.361s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04__rosidl_typesupport_cExport-noconfig.cmake
+[8.361s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04__rosidl_typesupport_introspection_cppExport.cmake
+[8.361s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[8.361s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04__rosidl_typesupport_cppExport.cmake
+[8.361s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04__rosidl_typesupport_cppExport-noconfig.cmake
+[8.361s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/export_rmv_task04__rosidl_generator_pyExport.cmake
+[8.361s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/export_rmv_task04__rosidl_generator_pyExport-noconfig.cmake
+[8.361s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rosidl_cmake-extras.cmake
+[8.361s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.361s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.361s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/ament_cmake_export_libraries-extras.cmake
+[8.361s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/ament_cmake_export_targets-extras.cmake
+[8.361s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.361s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.361s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04Config.cmake
+[8.361s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04Config-version.cmake
+[8.361s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/package.xml
+[8.363s] Invoked command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04
