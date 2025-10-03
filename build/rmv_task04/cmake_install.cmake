@@ -43,6 +43,30 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/rmv_task04/ImgPublisher" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/rmv_task04/ImgPublisher")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/rmv_task04/ImgPublisher"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rmv_task04" TYPE EXECUTABLE FILES "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/ImgPublisher")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/rmv_task04/ImgPublisher" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/rmv_task04/ImgPublisher")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/rmv_task04/ImgPublisher"
+         OLD_RPATH "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/lib/64:/opt/ros/humble/lib:/usr/local/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/rmv_task04/ImgPublisher")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rmv_task04/" TYPE DIRECTORY FILES "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/launch")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/rmv_task04")
 endif()
 
@@ -91,6 +115,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rmv_task04/cmake" TYPE FILE FILES "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rmv_task04/cmake" TYPE FILE FILES "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rmv_task04/cmake" TYPE FILE FILES
     "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/ament_cmake_core/rmv_task04Config.cmake"
     "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/ament_cmake_core/rmv_task04Config-version.cmake"
@@ -99,26 +131,6 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rmv_task04" TYPE FILE FILES "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/package.xml")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/rmv_task04/ImgPublisher" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/rmv_task04/ImgPublisher")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/rmv_task04/ImgPublisher"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rmv_task04" TYPE EXECUTABLE FILES "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/ImgPublisher")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/rmv_task04/ImgPublisher" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/rmv_task04/ImgPublisher")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/rmv_task04/ImgPublisher"
-         OLD_RPATH "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/lib/64:/opt/ros/humble/lib:/usr/local/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/rmv_task04/ImgPublisher")
-    endif()
-  endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

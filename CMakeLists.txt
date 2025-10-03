@@ -38,7 +38,6 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-ament_package()
 
 
 add_executable(ImgPublisher src/img_publisher.cpp)
@@ -67,3 +66,10 @@ install(TARGETS
   ImgPublisher
   DESTINATION lib/${PROJECT_NAME}
 )
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}/
+)
+ament_export_include_directories(include)
+ament_export_dependencies(rclcpp sensor_msgs cv_bridge OpenCV)
+ament_package()

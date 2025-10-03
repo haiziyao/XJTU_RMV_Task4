@@ -1,0 +1,89 @@
+[0.007s] Invoking command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04 -DCMAKE_INSTALL_PREFIX=/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04
+[0.060s] -- The C compiler identification is GNU 11.4.0
+[0.112s] -- The CXX compiler identification is GNU 11.4.0
+[0.117s] -- Detecting C compiler ABI info
+[0.190s] -- Detecting C compiler ABI info - done
+[0.199s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.199s] -- Detecting C compile features
+[0.200s] -- Detecting C compile features - done
+[0.203s] -- Detecting CXX compiler ABI info
+[0.283s] -- Detecting CXX compiler ABI info - done
+[0.288s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.289s] -- Detecting CXX compile features
+[0.289s] -- Detecting CXX compile features - done
+[0.290s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.416s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.476s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.506s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.509s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.513s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.521s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.530s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.555s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.557s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.635s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.659s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.690s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.698s] -- Looking for pthread.h
+[0.775s] -- Looking for pthread.h - found
+[0.775s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.856s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.858s] -- Found Threads: TRUE  
+[0.895s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.914s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.920s] -- Found OpenCV: /usr/local (found version "4.12.0") 
+[0.921s] -- Found installed version of Eigen: /usr/share/eigen3/cmake
+[0.922s] -- Found required Ceres dependency: Eigen version 3.4.0 in /usr/include/eigen3
+[0.924s] -- Found installed version of glog: /usr/lib/x86_64-linux-gnu/cmake/glog
+[0.924s] -- Detected glog version: 0.4.0
+[0.925s] -- Found required Ceres dependency: glog
+[0.925s] -- Found installed version of gflags: /usr/lib/x86_64-linux-gnu/cmake/gflags
+[0.925s] -- Detected gflags version: 2.2.2
+[0.926s] -- Found required Ceres dependency: gflags
+[0.926s] -- Found Ceres version: 1.14.0 installed in: /usr/local with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, OpenMP, Multithreading]
+[0.927s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.991s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.991s] -- Configured cppcheck include dirs: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/include
+[0.991s] -- Configured cppcheck exclude dirs and/or files: 
+[0.993s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.997s] -- Added test 'lint_cmake' to check CMake code style
+[0.999s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.015s] -- Added test 'uncrustify' to check C / C++ code style
+[1.015s] -- Configured uncrustify additional arguments: 
+[1.017s] -- Added test 'xmllint' to check XML markup files
+[1.018s] -- Configuring done
+[1.026s] -- Generating done
+[1.029s] -- Build files have been written to: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04
+[1.035s] Invoked command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04 -DCMAKE_INSTALL_PREFIX=/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04
+[1.036s] Invoking command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04 -- -j28 -l28
+[1.081s] [ 50%] [32mBuilding CXX object CMakeFiles/ImgPublisher.dir/src/img_publisher.cpp.o[0m
+[4.567s] [100%] [32m[1mLinking CXX executable ImgPublisher[0m
+[4.680s] /usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.412
+[4.680s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.412
+[4.680s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.412
+[4.856s] [100%] Built target ImgPublisher
+[4.866s] Invoked command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04 -- -j28 -l28
+[4.878s] Invoking command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04
+[4.887s] -- Install configuration: ""
+[4.887s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/rmv_task04/ImgPublisher
+[4.888s] -- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/rmv_task04/ImgPublisher" to ""
+[4.888s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04//launch
+[4.888s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04//launch/launch.py
+[4.889s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/ament_index/resource_index/package_run_dependencies/rmv_task04
+[4.889s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/ament_index/resource_index/parent_prefix_path/rmv_task04
+[4.889s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/ament_prefix_path.sh
+[4.889s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/ament_prefix_path.dsv
+[4.889s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/path.sh
+[4.889s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/path.dsv
+[4.889s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/local_setup.bash
+[4.889s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/local_setup.sh
+[4.889s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/local_setup.zsh
+[4.889s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/local_setup.dsv
+[4.890s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/package.dsv
+[4.890s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/ament_index/resource_index/packages/rmv_task04
+[4.890s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.890s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.890s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04Config.cmake
+[4.890s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04Config-version.cmake
+[4.890s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/package.xml
+[4.892s] Invoked command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04
