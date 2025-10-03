@@ -1,0 +1,6 @@
+Invoking command in '/home/hzy/ros2/XJTU-RMV-Task04/Task04/build/Task04': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hzy/ros2/XJTU-RMV-Task04/Task04 -DCMAKE_INSTALL_PREFIX=/home/hzy/ros2/XJTU-RMV-Task04/Task04/install/Task04
+Invoked command in '/home/hzy/ros2/XJTU-RMV-Task04/Task04/build/Task04' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hzy/ros2/XJTU-RMV-Task04/Task04 -DCMAKE_INSTALL_PREFIX=/home/hzy/ros2/XJTU-RMV-Task04/Task04/install/Task04
+Invoking command in '/home/hzy/ros2/XJTU-RMV-Task04/Task04/build/Task04': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hzy/ros2/XJTU-RMV-Task04/Task04/build/Task04 -- -j28 -l28
+Invoked command in '/home/hzy/ros2/XJTU-RMV-Task04/Task04/build/Task04' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hzy/ros2/XJTU-RMV-Task04/Task04/build/Task04 -- -j28 -l28
+Invoking command in '/home/hzy/ros2/XJTU-RMV-Task04/Task04/build/Task04': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hzy/ros2/XJTU-RMV-Task04/Task04/build/Task04
+Invoked command in '/home/hzy/ros2/XJTU-RMV-Task04/Task04/build/Task04' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hzy/ros2/XJTU-RMV-Task04/Task04/build/Task04

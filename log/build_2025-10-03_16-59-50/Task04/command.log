@@ -1,0 +1,2 @@
+Invoking command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/Task04': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04 -DCMAKE_INSTALL_PREFIX=/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/Task04
+Invoked command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/Task04' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04 -DCMAKE_INSTALL_PREFIX=/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/Task04

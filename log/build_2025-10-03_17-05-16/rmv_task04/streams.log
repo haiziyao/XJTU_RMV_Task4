@@ -1,0 +1,8 @@
+[0.008s] Invoking command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04 -- -j28 -l28
+[0.056s] [35m[1mConsolidate compiler generated dependencies of target hik_camera_node[0m
+[0.073s] [ 50%] [32m[1mLinking CXX executable hik_camera_node[0m
+[337.046s] gmake[2]: *** Deleting file 'hik_camera_node'
+[337.047s] gmake[2]: *** [CMakeFiles/hik_camera_node.dir/build.make:1428: hik_camera_node] Interrupt
+[337.047s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hik_camera_node.dir/all] Interrupt
+[337.047s] gmake: *** [Makefile:146: all] Interrupt
+[337.051s] Invoked command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04 -- -j28 -l28

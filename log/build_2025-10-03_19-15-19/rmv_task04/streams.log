@@ -1,0 +1,29 @@
+[0.007s] Invoking command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04 -- -j28 -l28
+[0.047s] [35m[1mConsolidate compiler generated dependencies of target ImgPublisher[0m
+[0.069s] [ 50%] [32mBuilding CXX object CMakeFiles/ImgPublisher.dir/src/img_publisher.cpp.o[0m
+[3.982s] [100%] [32m[1mLinking CXX executable ImgPublisher[0m
+[4.131s] /usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.412
+[4.131s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.412
+[4.131s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.412
+[4.371s] [100%] Built target ImgPublisher
+[4.380s] Invoked command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04 -- -j28 -l28
+[4.395s] Invoking command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04
+[4.401s] -- Install configuration: ""
+[4.401s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/ament_index/resource_index/package_run_dependencies/rmv_task04
+[4.401s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/ament_index/resource_index/parent_prefix_path/rmv_task04
+[4.401s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/ament_prefix_path.sh
+[4.401s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/ament_prefix_path.dsv
+[4.401s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/path.sh
+[4.401s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/path.dsv
+[4.401s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/local_setup.bash
+[4.401s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/local_setup.sh
+[4.401s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/local_setup.zsh
+[4.401s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/local_setup.dsv
+[4.401s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/package.dsv
+[4.401s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/ament_index/resource_index/packages/rmv_task04
+[4.401s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04Config.cmake
+[4.401s] -- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04Config-version.cmake
+[4.401s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/package.xml
+[4.401s] -- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/rmv_task04/ImgPublisher
+[4.402s] -- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/rmv_task04/ImgPublisher" to ""
+[4.403s] Invoked command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04

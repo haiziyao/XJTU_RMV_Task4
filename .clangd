@@ -1,0 +1,25 @@
+CompileFlags:
+  # 基础编译标准（与项目保持一致，建议C++11及以上）
+  Add: 
+    - -std=c++17
+    # OpenCV 配置
+    - -I/usr/local/include/opencv4          # OpenCV 头文件路径（根据实际安装位置调整）
+    - -DCV_VERSION_MAJOR=4                  # 声明OpenCV 4版本
+    - -DOPENCV_4=1
+    # 海康威视MVS SDK配置（关键新增）
+    - -I${workspaceFolder}/include          # 海康SDK头文件目录（与CMake中的HIKVISION_SDK_INCLUDE_DIR一致）
+    - -DMV_GIGE_DEVICE=1                    # 声明网口相机支持
+    - -DMV_USB_DEVICE=1                     # 声明USB相机支持（若需要）
+    # Ceres与Eigen配置
+    - -I/usr/local/include/ceres            # Ceres头文件路径
+    - -I/usr/include/eigen3                 # Eigen头文件路径
+    # Tesseract与Leptonica配置
+    - -I/usr/include/tesseract              # Tesseract OCR头文件
+    - -I/usr/include/leptonica              # Leptonica头文件
+    # 标准库路径（确保std命名空间正常识别）
+    - -I/usr/include/c++/11
+    - -I/usr/include/x86_64-linux-gnu/c++/11
+  # 忽略不必要的警告（可选，减少干扰）
+  Remove:
+    - -Wunused-parameter
+    - -Wmissing-field-initializers

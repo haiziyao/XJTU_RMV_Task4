@@ -1,0 +1,2 @@
+Invoking command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04 -- -j28 -l28
+Invoked command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04 -- -j28 -l28

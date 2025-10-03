@@ -1,0 +1,39 @@
+[35m[1mConsolidate compiler generated dependencies of target ImgPublisher[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/ImgPublisher.dir/src/img_publisher.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/src/img_publisher.cpp:2[m[K:
+[01m[K/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/src/img_publisher.cpp:[m[K In member function ‘[01m[Kvoid ImgPublisher::publish_image(unsigned char*, MV_FRAME_OUT_INFO_EX&)[m[K’:
+[01m[K/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/src/img_publisher.cpp:157:49:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Klong int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  157 |                 RCLCPP_WARN(this->get_logger(), [01;35m[K"不支持的像素格式: %d"[m[K, [32m[Kinfo.enPixelType[m[K);
+      |                                                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~[m[K
+      |                                                                              [32m[K|[m[K
+      |                                                                              [32m[Klong int[m[K
+[01m[K/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/src/img_publisher.cpp:157:69:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  157 |                 RCLCPP_WARN(this->get_logger(), "不支持的像素格式: [01;36m[K%d[m[K", info.enPixelType);
+      |                                                                    [01;36m[K~^[m[K
+      |                                                                     [01;36m[K|[m[K
+      |                                                                     [01;36m[Kint[m[K
+      |                                                                    [32m[K%ld[m[K
+[100%] [32m[1mLinking CXX executable ImgPublisher[0m
+/usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.412
+/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.412
+/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.412
+[100%] Built target ImgPublisher
+-- Install configuration: ""
+-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/ament_index/resource_index/package_run_dependencies/rmv_task04
+-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/ament_index/resource_index/parent_prefix_path/rmv_task04
+-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/ament_prefix_path.sh
+-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/path.sh
+-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/path.dsv
+-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/local_setup.bash
+-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/local_setup.sh
+-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/local_setup.zsh
+-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/local_setup.dsv
+-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/package.dsv
+-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/ament_index/resource_index/packages/rmv_task04
+-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04Config.cmake
+-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04Config-version.cmake
+-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/package.xml
+-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/rmv_task04/ImgPublisher
+-- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/rmv_task04/ImgPublisher" to ""

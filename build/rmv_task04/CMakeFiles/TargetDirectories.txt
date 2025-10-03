@@ -1,0 +1,10 @@
+/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/CMakeFiles/uninstall.dir
+/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/CMakeFiles/rmv_task04_uninstall.dir
+/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/CMakeFiles/ImgPublisher.dir
+/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/CMakeFiles/test.dir
+/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/CMakeFiles/edit_cache.dir
+/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/CMakeFiles/rebuild_cache.dir
+/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/CMakeFiles/list_install_components.dir
+/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/CMakeFiles/install.dir
+/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/CMakeFiles/install/local.dir
+/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/CMakeFiles/install/strip.dir

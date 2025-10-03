@@ -1,0 +1,68 @@
+cmake_minimum_required(VERSION 3.10.0)
+project(rmv_task04 VERSION 0.1.0 LANGUAGES C CXX)
+
+
+file(GLOB_RECURSE SRC_List "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_BUILD_TYPE "Debug")
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
+
+
+set(OpenCV_DIR "/usr/local/lib/cmake/opencv4")
+set(Ceres_DIR "/usr/local/lib/cmake/Ceres")
+
+set(HIKVISION_SDK_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include)
+set(HIKVISION_SDK_LIB_DIR ${CMAKE_CURRENT_SOURCE_DIR}/lib/64)
+set(HIKVISION_SDK_LIBS ${CMAKE_CURRENT_SOURCE_DIR}/lib/64/libMvCameraControl.so)
+
+
+
+find_package(rclcpp REQUIRED)
+# （可选）若节点需要发布/订阅图像，需添加sensor_msgs（图像消息类型）
+find_package(sensor_msgs REQUIRED)
+# （可选）若用OpenCV处理图像后转ROS消息，需添加cv_bridge（OpenCV与ROS图像转换）
+find_package(cv_bridge REQUIRED)
+find_package(OpenCV REQUIRED)
+find_package(Ceres REQUIRED)
+
+
+
+add_executable(ImgPublisher ${SRC_List})
+
+target_include_directories(ImgPublisher PRIVATE
+    ${HIKVISION_SDK_INCLUDE_DIR}
+    ${OpenCV_INCLUDE_DIRS}
+    ${CERES_INCLUDE_DIRS}
+
+    ${rclcpp_INCLUDE_DIRS}
+    ${sensor_msgs_INCLUDE_DIRS}
+    ${cv_bridge_INCLUDE_DIRS}
+)
+
+target_link_libraries(ImgPublisher 
+    ${HIKVISION_SDK_LIBS}
+    ${OpenCV_LIBS}
+    ${CERES_LIBRARIES}
+    ${rclcpp_LIBRARIES}
+    ${sensor_msgs_LIBRARIES}
+    ${cv_bridge_LIBRARIES}
+)
+
+ament_target_dependencies(ImgPublisher
+    rclcpp
+    sensor_msgs
+    cv_bridge
+    OpenCV
+    Ceres
+)
+
+install(TARGETS
+    ImgPublisher
+    DESTINATION lib/${PROJECT_NAME}
+)
+
+ament_package()

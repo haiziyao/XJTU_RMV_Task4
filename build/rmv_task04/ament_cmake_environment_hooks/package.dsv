@@ -1,0 +1,4 @@
+source;share/rmv_task04/local_setup.bash
+source;share/rmv_task04/local_setup.dsv
+source;share/rmv_task04/local_setup.sh
+source;share/rmv_task04/local_setup.zsh

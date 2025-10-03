@@ -1,0 +1,10 @@
+[0.008s] Invoking command in '/home/hzy/ros2/XJTU-RMV-Task04/Task04/build/Task04': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hzy/ros2/XJTU-RMV-Task04/Task04/build/Task04 -- -j28 -l28
+[0.023s] [31mCMake Error at CMakeLists.txt:46:
+[0.024s]   Parse error.  Expected a command name, got unquoted argument with text
+[0.024s]   "）".
+[0.024s] 
+[0.024s] [0m
+[0.024s] -- Configuring incomplete, errors occurred!
+[0.024s] See also "/home/hzy/ros2/XJTU-RMV-Task04/Task04/build/Task04/CMakeFiles/CMakeOutput.log".
+[0.024s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.028s] Invoked command in '/home/hzy/ros2/XJTU-RMV-Task04/Task04/build/Task04' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hzy/ros2/XJTU-RMV-Task04/Task04/build/Task04 -- -j28 -l28

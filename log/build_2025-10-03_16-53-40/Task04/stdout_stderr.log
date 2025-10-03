@@ -1,0 +1,8 @@
+[31mCMake Error at CMakeLists.txt:46:
+  Parse error.  Expected a command name, got unquoted argument with text
+  "）".
+
+[0m
+-- Configuring incomplete, errors occurred!
+See also "/home/hzy/ros2/XJTU-RMV-Task04/Task04/build/Task04/CMakeFiles/CMakeOutput.log".
+gmake: *** [Makefile:226: cmake_check_build_system] Error 1

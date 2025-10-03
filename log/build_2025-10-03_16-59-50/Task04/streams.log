@@ -1,0 +1,55 @@
+[0.007s] Invoking command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/Task04': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04 -DCMAKE_INSTALL_PREFIX=/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/Task04
+[0.066s] -- The C compiler identification is GNU 11.4.0
+[0.118s] -- The CXX compiler identification is GNU 11.4.0
+[0.123s] -- Detecting C compiler ABI info
+[0.203s] -- Detecting C compiler ABI info - done
+[0.209s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.209s] -- Detecting C compile features
+[0.209s] -- Detecting C compile features - done
+[0.211s] -- Detecting CXX compiler ABI info
+[0.296s] -- Detecting CXX compiler ABI info - done
+[0.304s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.304s] -- Detecting CXX compile features
+[0.304s] -- Detecting CXX compile features - done
+[0.305s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.412s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.497s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.500s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.504s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.512s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.521s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.547s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.549s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.630s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.663s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.694s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.699s] -- Looking for pthread.h
+[0.786s] -- Looking for pthread.h - found
+[0.786s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.872s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.873s] -- Found Threads: TRUE  
+[0.914s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.933s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.938s] -- Found OpenCV: /usr/local (found version "4.12.0") 
+[0.939s] -- Found installed version of Eigen: /usr/share/eigen3/cmake
+[0.940s] -- Found required Ceres dependency: Eigen version 3.4.0 in /usr/include/eigen3
+[0.942s] -- Found installed version of glog: /usr/lib/x86_64-linux-gnu/cmake/glog
+[0.942s] -- Detected glog version: 0.4.0
+[0.942s] -- Found required Ceres dependency: glog
+[0.943s] -- Found installed version of gflags: /usr/lib/x86_64-linux-gnu/cmake/gflags
+[0.943s] -- Detected gflags version: 2.2.2
+[0.944s] -- Found required Ceres dependency: gflags
+[0.944s] -- Found Ceres version: 1.14.0 installed in: /usr/local with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, OpenMP, Multithreading]
+[0.980s] WARNING: Package name "Task04" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[0.985s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:53 (message):
+[0.985s]   ament_package_xml() package name 'Task04' in '/package.xml' does not match
+[0.985s]   current PROJECT_NAME 'rmv_task04'.  You must call project() with the same
+[0.985s]   package name before.
+[0.985s] Call Stack (most recent call first):
+[0.985s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[0.985s]   CMakeLists.txt:68 (ament_package)
+[0.985s] 
+[0.985s] [0m
+[0.986s] -- Configuring incomplete, errors occurred!
+[0.986s] See also "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/Task04/CMakeFiles/CMakeOutput.log".
+[0.993s] Invoked command in '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/Task04' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04 -DCMAKE_INSTALL_PREFIX=/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/Task04

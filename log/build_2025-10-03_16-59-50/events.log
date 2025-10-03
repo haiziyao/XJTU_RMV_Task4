@@ -1,0 +1,71 @@
+[0.000000] (-) TimerEvent: {}
+[0.000102] (Task04) JobQueued: {'identifier': 'Task04', 'dependencies': OrderedDict()}
+[0.000376] (Task04) JobStarted: {'identifier': 'Task04'}
+[0.006058] (Task04) JobProgress: {'identifier': 'Task04', 'progress': 'cmake'}
+[0.006540] (Task04) Command: {'cmd': ['/usr/bin/cmake', '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04', '-DCMAKE_INSTALL_PREFIX=/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/Task04'], 'cwd': '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/Task04', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'hzy'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:'), ('HOME', '/home/hzy'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/hzy/ros2/XJTU-RMV-Task04'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1877'), ('SYSTEMD_EXEC_PID', '2048'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '39125'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'hzy'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:20750'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig::/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hzy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/hzy/.dotnet/tools:/home/hzy/.dotnet/tools'), ('SESSION_MANAGER', 'local/hzy-Legion-Y7000P-IRX9:@/tmp/.ICE-unix/2019,unix/hzy-Legion-Y7000P-IRX9:/tmp/.ICE-unix/2019'), ('INVOCATION_ID', '93316b62d54344949269f765ba3ce5bb'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7FACD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-aa015eac22.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/Task04'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('MVCAM_SDK_VERSION', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.066807] (Task04) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099707] (-) TimerEvent: {}
+[0.118315] (Task04) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.123688] (Task04) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199918] (-) TimerEvent: {}
+[0.203207] (Task04) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.209198] (Task04) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.209339] (Task04) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.209696] (Task04) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.211589] (Task04) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.296423] (Task04) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.300154] (-) TimerEvent: {}
+[0.304141] (Task04) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.304421] (Task04) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.304641] (Task04) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.305842] (Task04) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.400309] (-) TimerEvent: {}
+[0.412614] (Task04) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.497234] (Task04) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.499917] (Task04) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.500370] (-) TimerEvent: {}
+[0.504719] (Task04) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.512040] (Task04) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.521520] (Task04) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.547347] (Task04) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.549143] (Task04) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600609] (-) TimerEvent: {}
+[0.630092] (Task04) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.662953] (Task04) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.694430] (Task04) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.698943] (Task04) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.700711] (-) TimerEvent: {}
+[0.785890] (Task04) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.786243] (Task04) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.800886] (-) TimerEvent: {}
+[0.871886] (Task04) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.873363] (Task04) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.901064] (-) TimerEvent: {}
+[0.914437] (Task04) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.933793] (Task04) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.938374] (Task04) StdoutLine: {'line': b'-- Found OpenCV: /usr/local (found version "4.12.0") \n'}
+[0.939265] (Task04) StdoutLine: {'line': b'-- Found installed version of Eigen: /usr/share/eigen3/cmake\n'}
+[0.939963] (Task04) StdoutLine: {'line': b'-- Found required Ceres dependency: Eigen version 3.4.0 in /usr/include/eigen3\n'}
+[0.941990] (Task04) StdoutLine: {'line': b'-- Found installed version of glog: /usr/lib/x86_64-linux-gnu/cmake/glog\n'}
+[0.942075] (Task04) StdoutLine: {'line': b'-- Detected glog version: 0.4.0\n'}
+[0.942573] (Task04) StdoutLine: {'line': b'-- Found required Ceres dependency: glog\n'}
+[0.943235] (Task04) StdoutLine: {'line': b'-- Found installed version of gflags: /usr/lib/x86_64-linux-gnu/cmake/gflags\n'}
+[0.943321] (Task04) StdoutLine: {'line': b'-- Detected gflags version: 2.2.2\n'}
+[0.943953] (Task04) StdoutLine: {'line': b'-- Found required Ceres dependency: gflags\n'}
+[0.944242] (Task04) StdoutLine: {'line': b'-- Found Ceres version: 1.14.0 installed in: /usr/local with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, OpenMP, Multithreading]\n'}
+[0.980866] (Task04) StderrLine: {'line': b'WARNING: Package name "Task04" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.\n'}
+[0.985580] (Task04) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:53 (message):\n'}
+[0.985674] (Task04) StderrLine: {'line': b"  ament_package_xml() package name 'Task04' in '/package.xml' does not match\n"}
+[0.985715] (Task04) StderrLine: {'line': b"  current PROJECT_NAME 'rmv_task04'.  You must call project() with the same\n"}
+[0.985752] (Task04) StderrLine: {'line': b'  package name before.\n'}
+[0.985786] (Task04) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.985822] (Task04) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)\n'}
+[0.985854] (Task04) StderrLine: {'line': b'  CMakeLists.txt:68 (ament_package)\n'}
+[0.985886] (Task04) StderrLine: {'line': b'\n'}
+[0.985918] (Task04) StderrLine: {'line': b'\x1b[0m\n'}
+[0.986059] (Task04) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.986144] (Task04) StdoutLine: {'line': b'See also "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/Task04/CMakeFiles/CMakeOutput.log".\n'}
+[0.991859] (Task04) CommandEnded: {'returncode': 1}
+[1.001129] (-) TimerEvent: {}
+[1.008432] (Task04) JobEnded: {'identifier': 'Task04', 'rc': 1}
+[1.019019] (-) EventReactorShutdown: {}
