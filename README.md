@@ -38,3 +38,13 @@ learn/   学习ros2写的几个示例topic,service,param
 └── example_topic_rclcpp
 
 ```
+
+``` bash
+#测试的命令
+ros2 param set /ImgPublisher exposure_time 40000.0
+ros2 param set /ImgPublisher frame_rate 180.0
+ros2 param set /ImgPublisher gain 2.0
+```
+##### 仍然存在的问题
+* 修改帧率并不会真正修改，帧率只和曝光率有关
+* 没有实现断线重连(耗时过于长)
