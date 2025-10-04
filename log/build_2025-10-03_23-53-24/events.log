@@ -1,0 +1,395 @@
+[0.000000] (-) TimerEvent: {}
+[0.000473] (rmv_task04) JobQueued: {'identifier': 'rmv_task04', 'dependencies': OrderedDict()}
+[0.000521] (rmv_task04) JobStarted: {'identifier': 'rmv_task04'}
+[0.005945] (rmv_task04) JobProgress: {'identifier': 'rmv_task04', 'progress': 'cmake'}
+[0.006349] (rmv_task04) Command: {'cmd': ['/usr/bin/cmake', '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04', '-DCMAKE_INSTALL_PREFIX=/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04'], 'cwd': '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'en_US:en'), ('USER', 'hzy'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7891/'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:'), ('HOME', '/home/hzy'), ('OLDPWD', '/home/hzy'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '5382'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'hzy'), ('ALL_PROXY', 'socks://127.0.0.1:7891/'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig::/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hzy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/hzy/.dotnet/tools'), ('SESSION_MANAGER', 'local/hzy-Legion-Y7000P-IRX9:@/tmp/.ICE-unix/5355,unix/hzy-Legion-Y7000P-IRX9:/tmp/.ICE-unix/5355'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1fbb2fe9_bc89_444b_a4e8_1aee49f59760'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('MVCAM_SDK_VERSION', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.063898] (rmv_task04) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.100016] (-) TimerEvent: {}
+[0.116018] (rmv_task04) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.122267] (rmv_task04) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199257] (rmv_task04) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.200098] (-) TimerEvent: {}
+[0.207336] (rmv_task04) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.207751] (rmv_task04) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.208037] (rmv_task04) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.211364] (rmv_task04) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.287837] (rmv_task04) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.292864] (rmv_task04) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.293037] (rmv_task04) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.293346] (rmv_task04) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.294436] (rmv_task04) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300196] (-) TimerEvent: {}
+[0.400529] (-) TimerEvent: {}
+[0.406964] (rmv_task04) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.461349] (rmv_task04) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.489198] (rmv_task04) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.491900] (rmv_task04) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.496694] (rmv_task04) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.500721] (-) TimerEvent: {}
+[0.503766] (rmv_task04) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.513302] (rmv_task04) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.538549] (rmv_task04) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.539917] (rmv_task04) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600842] (-) TimerEvent: {}
+[0.613250] (rmv_task04) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.635727] (rmv_task04) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.663355] (rmv_task04) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.667972] (rmv_task04) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.701067] (-) TimerEvent: {}
+[0.744447] (rmv_task04) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.745016] (rmv_task04) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.801214] (-) TimerEvent: {}
+[0.828555] (rmv_task04) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.829881] (rmv_task04) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.863763] (rmv_task04) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.882942] (rmv_task04) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.888030] (rmv_task04) StdoutLine: {'line': b'-- Found OpenCV: /usr/local (found version "4.12.0") \n'}
+[0.889601] (rmv_task04) StdoutLine: {'line': b'-- Found installed version of Eigen: /usr/share/eigen3/cmake\n'}
+[0.890327] (rmv_task04) StdoutLine: {'line': b'-- Found required Ceres dependency: Eigen version 3.4.0 in /usr/include/eigen3\n'}
+[0.892413] (rmv_task04) StdoutLine: {'line': b'-- Found installed version of glog: /usr/lib/x86_64-linux-gnu/cmake/glog\n'}
+[0.892515] (rmv_task04) StdoutLine: {'line': b'-- Detected glog version: 0.4.0\n'}
+[0.892915] (rmv_task04) StdoutLine: {'line': b'-- Found required Ceres dependency: glog\n'}
+[0.893651] (rmv_task04) StdoutLine: {'line': b'-- Found installed version of gflags: /usr/lib/x86_64-linux-gnu/cmake/gflags\n'}
+[0.893731] (rmv_task04) StdoutLine: {'line': b'-- Detected gflags version: 2.2.2\n'}
+[0.894351] (rmv_task04) StdoutLine: {'line': b'-- Found required Ceres dependency: gflags\n'}
+[0.894558] (rmv_task04) StdoutLine: {'line': b'-- Found Ceres version: 1.14.0 installed in: /usr/local with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, OpenMP, Multithreading]\n'}
+[0.895191] (rmv_task04) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.900522] (rmv_task04) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.901278] (-) TimerEvent: {}
+[1.001446] (-) TimerEvent: {}
+[1.082558] (rmv_task04) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.101635] (-) TimerEvent: {}
+[1.201863] (-) TimerEvent: {}
+[1.302165] (-) TimerEvent: {}
+[1.337081] (rmv_task04) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.402241] (-) TimerEvent: {}
+[1.437328] (rmv_task04) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.459768] (rmv_task04) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.460812] (rmv_task04) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.486698] (rmv_task04) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.486824] (rmv_task04) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.486892] (rmv_task04) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.486938] (rmv_task04) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.502440] (-) TimerEvent: {}
+[1.505677] (rmv_task04) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.562120] (rmv_task04) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.562723] (rmv_task04) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/rosidl_generator_c>;$<BUILD_INTERFACE:/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/rosidl_typesupport_fastrtps_c>;$<BUILD_INTERFACE:/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/rosidl_generator_cpp>;$<BUILD_INTERFACE:/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/rosidl_typesupport_fastrtps_cpp>;$<BUILD_INTERFACE:/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/rosidl_typesupport_introspection_cpp>;/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/rosidl_generator_c;/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04/rosidl_generator_py;/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/include\n'}
+[1.562833] (rmv_task04) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.565850] (rmv_task04) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.571208] (rmv_task04) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.574093] (rmv_task04) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.595238] (rmv_task04) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.595315] (rmv_task04) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.598142] (rmv_task04) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.600366] (rmv_task04) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.602492] (-) TimerEvent: {}
+[1.628122] (rmv_task04) StdoutLine: {'line': b'-- Generating done\n'}
+[1.637556] (rmv_task04) StdoutLine: {'line': b'-- Build files have been written to: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04\n'}
+[1.645036] (rmv_task04) CommandEnded: {'returncode': 0}
+[1.646292] (rmv_task04) JobProgress: {'identifier': 'rmv_task04', 'progress': 'build'}
+[1.646309] (rmv_task04) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04', '--', '-j28', '-l28'], 'cwd': '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'en_US:en'), ('USER', 'hzy'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7891/'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:'), ('HOME', '/home/hzy'), ('OLDPWD', '/home/hzy'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '5382'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'hzy'), ('ALL_PROXY', 'socks://127.0.0.1:7891/'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig::/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hzy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/hzy/.dotnet/tools'), ('SESSION_MANAGER', 'local/hzy-Legion-Y7000P-IRX9:@/tmp/.ICE-unix/5355,unix/hzy-Legion-Y7000P-IRX9:/tmp/.ICE-unix/5355'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1fbb2fe9_bc89_444b_a4e8_1aee49f59760'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('MVCAM_SDK_VERSION', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.683040] (rmv_task04) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.696671] (rmv_task04) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.696776] (rmv_task04) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/ImgPublisher.dir/src/img_publisher.cpp.o\x1b[0m\n'}
+[1.698994] (rmv_task04) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_rmv_task04\n'}
+[1.702599] (-) TimerEvent: {}
+[1.802857] (-) TimerEvent: {}
+[1.837931] (rmv_task04) StdoutLine: {'line': b'running egg_info\n'}
+[1.838250] (rmv_task04) StdoutLine: {'line': b'creating rmv_task04.egg-info\n'}
+[1.838352] (rmv_task04) StdoutLine: {'line': b'writing rmv_task04.egg-info/PKG-INFO\n'}
+[1.838412] (rmv_task04) StdoutLine: {'line': b'writing dependency_links to rmv_task04.egg-info/dependency_links.txt\n'}
+[1.838563] (rmv_task04) StdoutLine: {'line': b'writing top-level names to rmv_task04.egg-info/top_level.txt\n'}
+[1.838636] (rmv_task04) StdoutLine: {'line': b"writing manifest file 'rmv_task04.egg-info/SOURCES.txt'\n"}
+[1.839667] (rmv_task04) StdoutLine: {'line': b"reading manifest file 'rmv_task04.egg-info/SOURCES.txt'\n"}
+[1.839911] (rmv_task04) StdoutLine: {'line': b"writing manifest file 'rmv_task04.egg-info/SOURCES.txt'\n"}
+[1.858514] (rmv_task04) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_rmv_task04_egg\n'}
+[1.903028] (-) TimerEvent: {}
+[1.935716] (rmv_task04) StdoutLine: {'line': b'[  6%] Built target rmv_task04__cpp\n'}
+[1.935866] (rmv_task04) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/rmv_task04__rosidl_generator_c.dir/rosidl_generator_c/rmv_task04/msg/detail/object__functions.c.o\x1b[0m\n'}
+[1.936820] (rmv_task04) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/rmv_task04__rosidl_generator_c.dir/rosidl_generator_c/rmv_task04/msg/detail/object_array__functions.c.o\x1b[0m\n'}
+[1.943225] (rmv_task04) StdoutLine: {'line': b'[ 13%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.943466] (rmv_task04) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.943965] (rmv_task04) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.969658] (rmv_task04) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library librmv_task04__rosidl_generator_c.so\x1b[0m\n'}
+[2.000469] (rmv_task04) StdoutLine: {'line': b'[ 20%] Built target rmv_task04__rosidl_generator_c\n'}
+[2.003214] (-) TimerEvent: {}
+[2.010813] (rmv_task04) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.010947] (rmv_task04) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.011555] (rmv_task04) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.103337] (-) TimerEvent: {}
+[2.163862] (rmv_task04) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/rmv_task04__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rmv_task04/msg/object__type_support.cpp.o\x1b[0m\n'}
+[2.164039] (rmv_task04) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/rmv_task04__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rmv_task04/msg/object_array__type_support.cpp.o\x1b[0m\n'}
+[2.165955] (rmv_task04) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/rmv_task04__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rmv_task04/msg/detail/object_array__type_support.cpp.o\x1b[0m\n'}
+[2.166595] (rmv_task04) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/rmv_task04__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rmv_task04/msg/detail/object__type_support.cpp.o\x1b[0m\n'}
+[2.174574] (rmv_task04) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/rmv_task04__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rmv_task04/msg/detail/dds_fastrtps/object__type_support.cpp.o\x1b[0m\n'}
+[2.175868] (rmv_task04) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/rmv_task04__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rmv_task04/msg/detail/dds_fastrtps/object_array__type_support.cpp.o\x1b[0m\n'}
+[2.203431] (-) TimerEvent: {}
+[2.227040] (rmv_task04) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/rmv_task04__rosidl_typesupport_c.dir/rosidl_typesupport_c/rmv_task04/msg/object__type_support.cpp.o\x1b[0m\n'}
+[2.227612] (rmv_task04) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/rmv_task04__rosidl_typesupport_c.dir/rosidl_typesupport_c/rmv_task04/msg/object_array__type_support.cpp.o\x1b[0m\n'}
+[2.251981] (rmv_task04) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/rmv_task04__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rmv_task04/msg/detail/object_array__type_support.c.o\x1b[0m\n'}
+[2.252139] (rmv_task04) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/rmv_task04__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rmv_task04/msg/detail/object__type_support.c.o\x1b[0m\n'}
+[2.255258] (rmv_task04) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library librmv_task04__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.287294] (rmv_task04) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking C shared library librmv_task04__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.293386] (rmv_task04) StdoutLine: {'line': b'[ 55%] Built target rmv_task04__rosidl_typesupport_c\n'}
+[2.298258] (rmv_task04) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/rmv_task04__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rmv_task04/msg/detail/object__type_support_c.cpp.o\x1b[0m\n'}
+[2.301098] (rmv_task04) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/rmv_task04__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rmv_task04/msg/detail/object_array__type_support_c.cpp.o\x1b[0m\n'}
+[2.303505] (-) TimerEvent: {}
+[2.316871] (rmv_task04) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library librmv_task04__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.317021] (rmv_task04) StdoutLine: {'line': b'[ 62%] Built target rmv_task04__rosidl_typesupport_introspection_c\n'}
+[2.348802] (rmv_task04) StdoutLine: {'line': b'[ 62%] Built target rmv_task04__rosidl_typesupport_cpp\n'}
+[2.368084] (rmv_task04) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/ImgDealer.dir/src/img_dealer.cpp.o\x1b[0m\n'}
+[2.403700] (-) TimerEvent: {}
+[2.407884] (rmv_task04) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library librmv_task04__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.460043] (rmv_task04) StdoutLine: {'line': b'[ 67%] Built target rmv_task04__rosidl_typesupport_introspection_cpp\n'}
+[2.465457] (rmv_task04) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library librmv_task04__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.503888] (-) TimerEvent: {}
+[2.520843] (rmv_task04) StdoutLine: {'line': b'[ 69%] Built target rmv_task04__rosidl_typesupport_fastrtps_cpp\n'}
+[2.540817] (rmv_task04) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library librmv_task04__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.593998] (rmv_task04) StdoutLine: {'line': b'[ 72%] Built target rmv_task04__rosidl_typesupport_fastrtps_c\n'}
+[2.603965] (-) TimerEvent: {}
+[2.612895] (rmv_task04) StdoutLine: {'line': b'[ 72%] Built target rmv_task04\n'}
+[2.627332] (rmv_task04) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.704146] (-) TimerEvent: {}
+[2.804447] (-) TimerEvent: {}
+[2.904753] (-) TimerEvent: {}
+[2.975391] (rmv_task04) StdoutLine: {'line': b'[ 74%] Built target rmv_task04__py\n'}
+[2.991280] (rmv_task04) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/rmv_task04__rosidl_generator_py.dir/rosidl_generator_py/rmv_task04/msg/_object_array_s.c.o\x1b[0m\n'}
+[2.991413] (rmv_task04) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/rmv_task04__rosidl_generator_py.dir/rosidl_generator_py/rmv_task04/msg/_object_s.c.o\x1b[0m\n'}
+[3.004933] (-) TimerEvent: {}
+[3.057415] (rmv_task04) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/rmv_task04/librmv_task04__rosidl_generator_py.so\x1b[0m\n'}
+[3.090697] (rmv_task04) StdoutLine: {'line': b'[ 81%] Built target rmv_task04__rosidl_generator_py\n'}
+[3.105124] (-) TimerEvent: {}
+[3.105728] (rmv_task04) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/rmv_task04__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/rmv_task04/_rmv_task04_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.109227] (rmv_task04) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/rmv_task04__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/rmv_task04/_rmv_task04_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[3.109819] (rmv_task04) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/rmv_task04__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/rmv_task04/_rmv_task04_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[3.169437] (rmv_task04) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/rmv_task04/rmv_task04_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.170624] (rmv_task04) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/rmv_task04/rmv_task04_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.173938] (rmv_task04) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/rmv_task04/rmv_task04_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.197517] (rmv_task04) StdoutLine: {'line': b'[ 95%] Built target rmv_task04__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.200477] (rmv_task04) StdoutLine: {'line': b'[ 95%] Built target rmv_task04__rosidl_typesupport_c__pyext\n'}
+[3.203795] (rmv_task04) StdoutLine: {'line': b'[ 95%] Built target rmv_task04__rosidl_typesupport_introspection_c__pyext\n'}
+[3.205227] (-) TimerEvent: {}
+[3.305507] (-) TimerEvent: {}
+[3.405838] (-) TimerEvent: {}
+[3.506153] (-) TimerEvent: {}
+[3.606382] (-) TimerEvent: {}
+[3.706606] (-) TimerEvent: {}
+[3.806913] (-) TimerEvent: {}
+[3.907191] (-) TimerEvent: {}
+[4.007417] (-) TimerEvent: {}
+[4.107683] (-) TimerEvent: {}
+[4.208001] (-) TimerEvent: {}
+[4.308239] (-) TimerEvent: {}
+[4.408567] (-) TimerEvent: {}
+[4.508875] (-) TimerEvent: {}
+[4.609195] (-) TimerEvent: {}
+[4.709510] (-) TimerEvent: {}
+[4.809821] (-) TimerEvent: {}
+[4.910137] (-) TimerEvent: {}
+[5.010451] (-) TimerEvent: {}
+[5.110761] (-) TimerEvent: {}
+[5.182907] (rmv_task04) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable ImgPublisher\x1b[0m\n'}
+[5.210940] (-) TimerEvent: {}
+[5.291608] (rmv_task04) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.412\n'}
+[5.291864] (rmv_task04) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.412\n'}
+[5.292192] (rmv_task04) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.412\n'}
+[5.311114] (-) TimerEvent: {}
+[5.411413] (-) TimerEvent: {}
+[5.472762] (rmv_task04) StdoutLine: {'line': b'[ 97%] Built target ImgPublisher\n'}
+[5.511579] (-) TimerEvent: {}
+[5.611864] (-) TimerEvent: {}
+[5.712146] (-) TimerEvent: {}
+[5.812377] (-) TimerEvent: {}
+[5.912674] (-) TimerEvent: {}
+[6.012969] (-) TimerEvent: {}
+[6.113266] (-) TimerEvent: {}
+[6.213559] (-) TimerEvent: {}
+[6.313855] (-) TimerEvent: {}
+[6.414153] (-) TimerEvent: {}
+[6.514364] (-) TimerEvent: {}
+[6.614664] (-) TimerEvent: {}
+[6.714990] (-) TimerEvent: {}
+[6.815308] (-) TimerEvent: {}
+[6.915604] (-) TimerEvent: {}
+[7.015916] (-) TimerEvent: {}
+[7.116199] (-) TimerEvent: {}
+[7.216425] (-) TimerEvent: {}
+[7.316726] (-) TimerEvent: {}
+[7.417017] (-) TimerEvent: {}
+[7.517262] (-) TimerEvent: {}
+[7.617540] (-) TimerEvent: {}
+[7.717796] (-) TimerEvent: {}
+[7.818117] (-) TimerEvent: {}
+[7.886980] (rmv_task04) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ImgDealer\x1b[0m\n'}
+[7.918314] (-) TimerEvent: {}
+[8.018569] (-) TimerEvent: {}
+[8.027488] (rmv_task04) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.412\n'}
+[8.118758] (-) TimerEvent: {}
+[8.219114] (-) TimerEvent: {}
+[8.317466] (rmv_task04) StdoutLine: {'line': b'[100%] Built target ImgDealer\n'}
+[8.319212] (-) TimerEvent: {}
+[8.326469] (rmv_task04) CommandEnded: {'returncode': 0}
+[8.327149] (rmv_task04) JobProgress: {'identifier': 'rmv_task04', 'progress': 'install'}
+[8.338013] (rmv_task04) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04'], 'cwd': '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'en_US:en'), ('USER', 'hzy'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7891/'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:'), ('HOME', '/home/hzy'), ('OLDPWD', '/home/hzy'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '5382'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'hzy'), ('ALL_PROXY', 'socks://127.0.0.1:7891/'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig::/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hzy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/hzy/.dotnet/tools'), ('SESSION_MANAGER', 'local/hzy-Legion-Y7000P-IRX9:@/tmp/.ICE-unix/5355,unix/hzy-Legion-Y7000P-IRX9:/tmp/.ICE-unix/5355'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1fbb2fe9_bc89_444b_a4e8_1aee49f59760'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/build/rmv_task04'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('MVCAM_SDK_VERSION', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[8.347793] (rmv_task04) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.347975] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/ament_index/resource_index/rosidl_interfaces/rmv_task04\n'}
+[8.348091] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04\n'}
+[8.348152] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg\n'}
+[8.348205] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/rosidl_generator_c__visibility_control.h\n'}
+[8.348256] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/object_array.h\n'}
+[8.348364] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail\n'}
+[8.348424] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__functions.h\n'}
+[8.348550] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__functions.c\n'}
+[8.348631] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__struct.h\n'}
+[8.348685] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__functions.h\n'}
+[8.348738] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__type_support.h\n'}
+[8.348789] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__struct.h\n'}
+[8.348870] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__type_support.h\n'}
+[8.348920] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__functions.c\n'}
+[8.348972] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/object.h\n'}
+[8.349023] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/library_path.sh\n'}
+[8.349114] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/library_path.dsv\n'}
+[8.349170] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_generator_c.so\n'}
+[8.349311] (rmv_task04) StdoutLine: {'line': b'-- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_generator_c.so" to ""\n'}
+[8.349400] (rmv_task04) StdoutLine: {'line': b'-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04\n'}
+[8.349454] (rmv_task04) StdoutLine: {'line': b'-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg\n'}
+[8.349504] (rmv_task04) StdoutLine: {'line': b'-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail\n'}
+[8.349585] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__rosidl_typesupport_fastrtps_c.h\n'}
+[8.349640] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__rosidl_typesupport_fastrtps_c.h\n'}
+[8.349688] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[8.349762] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_fastrtps_c.so\n'}
+[8.349976] (rmv_task04) StdoutLine: {'line': b'-- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[8.350063] (rmv_task04) StdoutLine: {'line': b'-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04\n'}
+[8.350115] (rmv_task04) StdoutLine: {'line': b'-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg\n'}
+[8.350161] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/object_array.hpp\n'}
+[8.350238] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[8.350286] (rmv_task04) StdoutLine: {'line': b'-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail\n'}
+[8.350337] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__type_support.hpp\n'}
+[8.350423] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__traits.hpp\n'}
+[8.350469] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__builder.hpp\n'}
+[8.350528] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__struct.hpp\n'}
+[8.350577] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__type_support.hpp\n'}
+[8.350651] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__traits.hpp\n'}
+[8.350701] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__builder.hpp\n'}
+[8.350775] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__struct.hpp\n'}
+[8.350820] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/object.hpp\n'}
+[8.350901] (rmv_task04) StdoutLine: {'line': b'-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04\n'}
+[8.350948] (rmv_task04) StdoutLine: {'line': b'-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg\n'}
+[8.350995] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[8.351067] (rmv_task04) StdoutLine: {'line': b'-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail\n'}
+[8.351152] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.351200] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.351247] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/dds_fastrtps\n'}
+[8.351316] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_fastrtps_cpp.so\n'}
+[8.351502] (rmv_task04) StdoutLine: {'line': b'-- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[8.351565] (rmv_task04) StdoutLine: {'line': b'-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04\n'}
+[8.351644] (rmv_task04) StdoutLine: {'line': b'-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg\n'}
+[8.351693] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[8.351773] (rmv_task04) StdoutLine: {'line': b'-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail\n'}
+[8.351819] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__type_support.c\n'}
+[8.351867] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__type_support.c\n'}
+[8.351943] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__rosidl_typesupport_introspection_c.h\n'}
+[8.351991] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__rosidl_typesupport_introspection_c.h\n'}
+[8.352058] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_introspection_c.so\n'}
+[8.352233] (rmv_task04) StdoutLine: {'line': b'-- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_introspection_c.so" to ""\n'}
+[8.352302] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_c.so\n'}
+[8.352485] (rmv_task04) StdoutLine: {'line': b'-- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_c.so" to ""\n'}
+[8.352555] (rmv_task04) StdoutLine: {'line': b'-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04\n'}
+[8.352596] (rmv_task04) StdoutLine: {'line': b'-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg\n'}
+[8.352634] (rmv_task04) StdoutLine: {'line': b'-- Up-to-date: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail\n'}
+[8.352698] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.352740] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object__type_support.cpp\n'}
+[8.352780] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.352844] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/include/rmv_task04/rmv_task04/msg/detail/object_array__type_support.cpp\n'}
+[8.352885] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_introspection_cpp.so\n'}
+[8.353058] (rmv_task04) StdoutLine: {'line': b'-- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[8.353115] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_cpp.so\n'}
+[8.353277] (rmv_task04) StdoutLine: {'line': b'-- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_typesupport_cpp.so" to ""\n'}
+[8.353334] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/pythonpath.sh\n'}
+[8.353389] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/pythonpath.dsv\n'}
+[8.353441] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04-0.0.0-py3.10.egg-info\n'}
+[8.353522] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[8.353578] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[8.353632] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[8.353686] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[8.353749] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04\n'}
+[8.353805] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/_rmv_task04_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[8.353859] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/librmv_task04__rosidl_generator_py.so\n'}
+[8.353927] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/__init__.py\n'}
+[8.353972] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/_rmv_task04_s.ep.rosidl_typesupport_c.c\n'}
+[8.354016] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/rmv_task04_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.354073] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/rmv_task04_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.354124] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/msg\n'}
+[8.354170] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/msg/_object_array_s.c\n'}
+[8.354217] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/msg/_object.py\n'}
+[8.354266] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/msg/_object_array.py\n'}
+[8.354312] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/msg/_object_s.c\n'}
+[8.354358] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/msg/__init__.py\n'}
+[8.354403] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/_rmv_task04_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[8.354450] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/rmv_task04_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.376998] (rmv_task04) StdoutLine: {'line': b"Listing '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04'...\n"}
+[8.377103] (rmv_task04) StdoutLine: {'line': b"Compiling '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/__init__.py'...\n"}
+[8.377140] (rmv_task04) StdoutLine: {'line': b"Listing '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/msg'...\n"}
+[8.377170] (rmv_task04) StdoutLine: {'line': b"Compiling '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/msg/__init__.py'...\n"}
+[8.377198] (rmv_task04) StdoutLine: {'line': b"Compiling '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/msg/_object.py'...\n"}
+[8.377229] (rmv_task04) StdoutLine: {'line': b"Compiling '/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/msg/_object_array.py'...\n"}
+[8.379823] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/rmv_task04_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.379926] (rmv_task04) StdoutLine: {'line': b'-- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/rmv_task04_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[8.379995] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/rmv_task04_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.380163] (rmv_task04) StdoutLine: {'line': b'-- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/rmv_task04_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[8.380244] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/rmv_task04_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.380310] (rmv_task04) StdoutLine: {'line': b'-- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/local/lib/python3.10/dist-packages/rmv_task04/rmv_task04_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[8.380379] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_generator_py.so\n'}
+[8.380543] (rmv_task04) StdoutLine: {'line': b'-- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/librmv_task04__rosidl_generator_py.so" to ""\n'}
+[8.380629] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/msg/Object.idl\n'}
+[8.380695] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/msg/ObjectArray.idl\n'}
+[8.380739] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/msg/Object.msg\n'}
+[8.380770] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/msg/ObjectArray.msg\n'}
+[8.380814] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/rmv_task04/ImgPublisher\n'}
+[8.381493] (rmv_task04) StdoutLine: {'line': b'-- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/rmv_task04/ImgPublisher" to ""\n'}
+[8.381552] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/rmv_task04/ImgDealer\n'}
+[8.383856] (rmv_task04) StdoutLine: {'line': b'-- Set runtime path of "/home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/lib/rmv_task04/ImgDealer" to ""\n'}
+[8.383898] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04//launch\n'}
+[8.383941] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04//launch/launch.py\n'}
+[8.383968] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/ament_index/resource_index/package_run_dependencies/rmv_task04\n'}
+[8.384005] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/ament_index/resource_index/parent_prefix_path/rmv_task04\n'}
+[8.384047] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/ament_prefix_path.sh\n'}
+[8.384096] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/ament_prefix_path.dsv\n'}
+[8.384144] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/path.sh\n'}
+[8.384191] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/environment/path.dsv\n'}
+[8.384240] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/local_setup.bash\n'}
+[8.384288] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/local_setup.sh\n'}
+[8.384338] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/local_setup.zsh\n'}
+[8.384384] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/local_setup.dsv\n'}
+[8.384430] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/package.dsv\n'}
+[8.384492] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/ament_index/resource_index/packages/rmv_task04\n'}
+[8.384561] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/export_rmv_task04__rosidl_generator_cExport.cmake\n'}
+[8.384620] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/export_rmv_task04__rosidl_generator_cExport-noconfig.cmake\n'}
+[8.384690] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/export_rmv_task04__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[8.384749] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/export_rmv_task04__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[8.384805] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/export_rmv_task04__rosidl_generator_cppExport.cmake\n'}
+[8.384858] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/export_rmv_task04__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[8.384910] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/export_rmv_task04__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[8.384965] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04__rosidl_typesupport_introspection_cExport.cmake\n'}
+[8.385015] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[8.385070] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04__rosidl_typesupport_cExport.cmake\n'}
+[8.385121] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[8.385177] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[8.385229] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[8.385285] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04__rosidl_typesupport_cppExport.cmake\n'}
+[8.385334] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[8.385390] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/export_rmv_task04__rosidl_generator_pyExport.cmake\n'}
+[8.385440] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/export_rmv_task04__rosidl_generator_pyExport-noconfig.cmake\n'}
+[8.385491] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rosidl_cmake-extras.cmake\n'}
+[8.385540] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.385591] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.385640] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[8.385693] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[8.385741] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[8.385789] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[8.385838] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04Config.cmake\n'}
+[8.385878] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/cmake/rmv_task04Config-version.cmake\n'}
+[8.385930] (rmv_task04) StdoutLine: {'line': b'-- Installing: /home/hzy/ros2/XJTU-RMV-Task04/rmv_task04/install/rmv_task04/share/rmv_task04/package.xml\n'}
+[8.387687] (rmv_task04) CommandEnded: {'returncode': 0}
+[8.401572] (rmv_task04) JobEnded: {'identifier': 'rmv_task04', 'rc': 0}
+[8.401994] (-) EventReactorShutdown: {}

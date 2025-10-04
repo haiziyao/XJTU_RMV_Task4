@@ -42,11 +42,9 @@ private:
             cv_bridge::CvImagePtr cv_ptr = cv_bridge::toCvCopy(msg, msg->encoding);
             cv::Mat frame = cv_ptr->image;
 
-            // ✅ 显示原始图像（只用于测试通信）
             cv::imshow("Received Image", frame);
             cv::waitKey(1);
 
-            // ✅ 构建一个空的 ObjectArray 消息，只是验证能发布
             rmv_task04::msg::ObjectArray objects_msg;
             objects_msg.header = msg->header;
             objects_publisher_->publish(objects_msg);
@@ -63,37 +61,27 @@ private:
 
 
     
-    std::vector<rmv_task04::msg::Object> detect_objects(cv::Mat& frame)  // 修改消息命名空间
+    std::vector<rmv_task04::msg::Object> detect_objects(cv::Mat& frame)  
     {
-        std::vector<rmv_task04::msg::Object> objects;  // 修改消息命名空间
+        std::vector<rmv_task04::msg::Object> objects; 
 
-        // 1. 颜色阈值（检测红色）
         cv::Mat hsv, mask;
         cv::cvtColor(frame, hsv, cv::COLOR_BGR2HSV);
         cv::inRange(hsv, cv::Scalar(0, 120, 70), cv::Scalar(10, 255, 255), mask);  // 红色低阈值
         cv::inRange(hsv, cv::Scalar(170, 120, 70), cv::Scalar(180, 255, 255), mask);  // 红色高阈值
 
-        // 2. 形态学操作去除噪声
         cv::Mat kernel = cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(5, 5));
         cv::morphologyEx(mask, mask, cv::MORPH_CLOSE, kernel);
         cv::morphologyEx(mask, mask, cv::MORPH_OPEN, kernel);
-
-        // 3. 查找轮廓
         std::vector<std::vector<cv::Point>> contours;
         cv::findContours(mask, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 
-        // 4. 筛选轮廓并生成物体信息
-        for (auto& contour : contours)
-        {
-            // 过滤小面积轮廓（去除噪声）
+        for (auto& contour : contours){
             double area = cv::contourArea(contour);
-            if (area < 500)  // 面积小于500像素的忽略
+            if (area < 500)  
                 continue;
-
-            // 计算最小外接矩形
             cv::Rect bbox = cv::boundingRect(contour);
 
-            // 构建物体消息
             rmv_task04::msg::Object obj;  // 修改消息命名空间
             obj.class_name = "red_object";  // 物体类别
             obj.x = bbox.x + bbox.width / 2.0;  // 中心x坐标
@@ -101,18 +89,14 @@ private:
             obj.width = bbox.width;
             obj.height = bbox.height;
             obj.score = 0.9;  // 置信度（模拟）
-
             objects.push_back(obj);
-
-            // 可视化：在图像上画框（可选，用于调试）
             cv::rectangle(frame, bbox, cv::Scalar(0, 255, 0), 2);
             cv::putText(frame, "red_object", cv::Point(bbox.x, bbox.y-10), 
                        cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0, 255, 0), 2);
         }
 
-        // 显示处理后的图像（调试用）
         cv::imshow("Processed Image", frame);
-        cv::waitKey(1);  // 必须添加，否则窗口无响应
+        cv::waitKey(1);  
 
         return objects;
     }
@@ -121,7 +105,7 @@ private:
 int main(int argc, char**argv)
 {
     rclcpp::init(argc, argv);
-    auto node = std::make_shared<ImgDealer>();  // 修复类名错误（原DealImgNode改为ImgDealer）
+    auto node = std::make_shared<ImgDealer>();  
     rclcpp::spin(node);
     rclcpp::shutdown();
     cv::destroyAllWindows();  
