@@ -1,0 +1,37 @@
+[0.009s] Invoking command in '/home/hzy/ros2/chapt3/chapt3_ws/src/example_service_rclcpp/build/example_service_rclcpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hzy/ros2/chapt3/chapt3_ws/src/example_service_rclcpp -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_INSTALL_PREFIX=/home/hzy/ros2/chapt3/chapt3_ws/src/example_service_rclcpp/install/example_service_rclcpp
+[0.019s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.122s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.140s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.142s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.146s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.152s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.159s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.180s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.180s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.262s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.295s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.341s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.341s] -- Configured cppcheck include dirs: 
+[0.341s] -- Configured cppcheck exclude dirs and/or files: 
+[0.342s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.343s] -- Added test 'lint_cmake' to check CMake code style
+[0.343s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.346s] -- Added test 'uncrustify' to check C / C++ code style
+[0.346s] -- Configured uncrustify additional arguments: 
+[0.347s] -- Added test 'xmllint' to check XML markup files
+[0.348s] -- Configuring done
+[0.349s] [31mCMake Error at CMakeLists.txt:25 (add_executable):
+[0.349s]   Cannot find source file:
+[0.349s] 
+[0.349s]     service_client_01.cpp
+[0.349s] 
+[0.349s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[0.349s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[0.349s] 
+[0.349s] [0m
+[0.349s] [31mCMake Error at CMakeLists.txt:25 (add_executable):
+[0.349s]   No SOURCES given to target: service_client_01
+[0.349s] 
+[0.349s] [0m
+[0.349s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[0.353s] Invoked command in '/home/hzy/ros2/chapt3/chapt3_ws/src/example_service_rclcpp/build/example_service_rclcpp' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hzy/ros2/chapt3/chapt3_ws/src/example_service_rclcpp -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_INSTALL_PREFIX=/home/hzy/ros2/chapt3/chapt3_ws/src/example_service_rclcpp/install/example_service_rclcpp

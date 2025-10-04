@@ -6,7 +6,6 @@ from launch_ros.substitutions import FindPackageShare
 import os
 
 def generate_launch_description():
-    # 1. 声明启动参数（支持命令行覆盖）
     declare_camera_ip_arg = DeclareLaunchArgument(
         'camera_ip',
         default_value='',
@@ -24,7 +23,7 @@ def generate_launch_description():
     )
     declare_exposure_time_arg = DeclareLaunchArgument(
         'exposure_time',
-        default_value='40000.0',
+        default_value='30000.0',
         description='曝光时间（μs）'
     )
     declare_gain_arg = DeclareLaunchArgument(
@@ -43,7 +42,6 @@ def generate_launch_description():
         description='像素格式（mono8/rgb8）'
     )
 
-    # 2. 配置节点参数（从启动参数或配置文件读取）
     config_file_path = PathJoinSubstitution(
         [FindPackageShare('rmv_task04'), 'config', 'camera_params.yaml']
     )
@@ -66,7 +64,6 @@ def generate_launch_description():
         ]
     )
 
-    # 3. 组装Launch描述
     return LaunchDescription([
         declare_camera_ip_arg,
         declare_camera_serial_arg,

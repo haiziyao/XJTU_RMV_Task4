@@ -2,8 +2,8 @@
 #include "sensor_msgs/msg/image.hpp"
 #include "cv_bridge/cv_bridge.h"
 #include "opencv2/opencv.hpp"
-#include "rmv_task04/msg/object_array.hpp"  // 修改为当前包的消息路径
-#include "rmv_task04/msg/object.hpp"       // 添加单个物体消息的引用
+#include "rmv_task04/msg/object_array.hpp"  
+#include "rmv_task04/msg/object.hpp"       
 #include <vector>
 
 class ImgDealer : public rclcpp::Node
@@ -11,14 +11,12 @@ class ImgDealer : public rclcpp::Node
 public:
     ImgDealer() : Node("deal_img_node")
     {
-        // 订阅图像话题（与相机节点发布的话题一致）
         image_subscriber_ = this->create_subscription<sensor_msgs::msg::Image>(
             "/image_raw", 10,
             std::bind(&ImgDealer::image_callback, this, std::placeholders::_1)
         );
 
-        // 发布物体识别结果（自定义话题）
-        objects_publisher_ = this->create_publisher<rmv_task04::msg::ObjectArray>(  // 修改消息命名空间
+        objects_publisher_ = this->create_publisher<rmv_task04::msg::ObjectArray>( 
             "/detected_objects", 10
         );
 
@@ -27,9 +25,8 @@ public:
 
 private:
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr image_subscriber_;
-    rclcpp::Publisher<rmv_task04::msg::ObjectArray>::SharedPtr objects_publisher_;  // 修改消息命名空间
+    rclcpp::Publisher<rmv_task04::msg::ObjectArray>::SharedPtr objects_publisher_;  
 
-    // 图像回调函数：处理图像并识别物体
     void image_callback(const sensor_msgs::msg::Image::SharedPtr msg)
     {   
         RCLCPP_INFO(this->get_logger(), 

@@ -1,0 +1,30 @@
+CompileFlags:
+  Add: 
+    - -I/usr/local/include/opencv4  # 你的 OpenCV 头文件路径（必须和 CMake 一致）
+    - -DCV_VERSION_MAJOR=4         # 告诉 clangd 是 OpenCV 4 版本
+    - -DOPENCV_4=1
+    - -I/usr/include/c++/11        # 标准库路径（避免 std 命名空间警告）
+    - -I/usr/include/x86_64-linux-gnu/c++/11  # 系统架构相关标准库路径
+    - -I/usr/include/tesseract
+    # Leptonica 头文件路径（Tesseract 依赖，默认路径）
+    - -I/usr/include/leptonica
+    # ROS 2 核心头文件路径（根据实际安装位置调整）
+    - -I/opt/ros/humble/include/rcl_yaml_param_parser
+    - -I/opt/ros/humble/include
+    - -I/opt/ros/humble/include/rclcpp
+    - -I/opt/ros/humble/include/std_msgs
+    - -I/opt/ros/humble/include/sensor_msgs
+    - -I/opt/ros/humble/include/geometry_msgs
+    - -I/opt/ros/humble/include/ament_index_cpp
+    - -I/opt/ros/humble/include/rcl
+    - -I/opt/ros/humble/include/rcutils
+    - -I/opt/ros/humble/include/rmw
+    
+    # ROS 2 与 OpenCV 桥接库
+    - -I/opt/ros/humble/include/cv_bridge
+    - -I/opt/ros/humble/include/image_transport
+    
+    # ROS 2 编译定义
+    - -DROS2=1
+    - -DROS_DISTRO_humble=1  # 根据你的 ROS 2 版本修改（如 foxy、galactic 等）
+

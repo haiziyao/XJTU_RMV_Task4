@@ -29,16 +29,6 @@ public:
         is_running_ = true;
         capture_thread_ = std::thread(&ImgPublisher::capture_loop, this);
         RCLCPP_INFO(this->get_logger(), "节点启动完成");
-
-        reconnect_timer_ = this->create_wall_timer(
-            std::chrono::seconds(5),
-            [this]() {
-                if (!check_camera_connection()) {
-                    RCLCPP_WARN(this->get_logger(), "心跳检测失败，标记需要重连");
-                    need_reconnect_ = true;
-                }
-            }
-        );
     }
     ~ImgPublisher(){
         is_running_ = false;
@@ -50,11 +40,6 @@ public:
     }
 private:
     std::atomic<bool> need_reconnect_{false};
-    std::mutex camera_mutex_;
-    rclcpp::TimerBase::SharedPtr reconnect_timer_;
-    int reconnect_attempts_ = 0;
-    const int max_reconnect_attempts_ = 5;
-    const std::chrono::seconds reconnect_interval_{2};
     rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr image_publisher_;
     void* m_handle_ =  nullptr;
     int n_buf_size_ = 0 ;
@@ -101,14 +86,28 @@ private:
             return false;
         }
 
-        MVCC_INTVALUE stIntvalue;
+        MVCC_INTVALUE stIntvalue,stWidth,stHeight;
         nRet = MV_CC_GetIntValue(m_handle_, "PayloadSize", &stIntvalue);
         if (MV_OK != nRet){
             RCLCPP_ERROR(this->get_logger(), "获取PayloadSize失败，错误码: 0x%x", nRet);
             stop_camera();
             return false;
         }
-        n_buf_size_ = stIntvalue.nCurValue;
+        nRet = MV_CC_GetIntValue(m_handle_, "Width", &stWidth);
+        if (MV_OK != nRet) {
+            RCLCPP_ERROR(this->get_logger(), "获取宽度失败，错误码: 0x%x", nRet);
+            stop_camera();
+            return false;
+        }
+        nRet = MV_CC_GetIntValue(m_handle_, "Height", &stHeight);
+        if (MV_OK != nRet) {
+            RCLCPP_ERROR(this->get_logger(), "获取高度失败，错误码: 0x%x", nRet);
+            stop_camera();
+            return false;
+        }
+        RCLCPP_INFO(this->get_logger(),"PayloadSize:%d stWidth: %d  stHeight:%d",stIntvalue.nCurValue,stWidth.nCurValue,stHeight.nCurValue);
+        n_buf_size_ = (stIntvalue.nCurValue>(stWidth.nCurValue*stHeight.nCurValue*3+4096))?stIntvalue.nCurValue:(stWidth.nCurValue*stHeight.nCurValue*3+4096);
+        //n_buf_size_ = 4665600;
         p_frame_buf_ = (unsigned char*)malloc(n_buf_size_);
         if (!p_frame_buf_){
             RCLCPP_ERROR(this->get_logger(), "内存分配失败");
@@ -120,90 +119,48 @@ private:
         return true;
     }
 
-    void stop_camera() {
-        if (m_handle_) {
-            try {
-                MV_CC_StopGrabbing(m_handle_);
-                MV_CC_CloseDevice(m_handle_);
-                MV_CC_DestroyHandle(m_handle_);
-            } catch (...) {
-                RCLCPP_ERROR(this->get_logger(), "停止相机时发生异常");
-            }
+    void stop_camera()
+    {
+        if (m_handle_){
+            MV_CC_StopGrabbing(m_handle_);
+            MV_CC_CloseDevice(m_handle_);
+            MV_CC_DestroyHandle(m_handle_);
             m_handle_ = nullptr;
         }
         
-        if (p_frame_buf_) {
+        if (p_frame_buf_){
             free(p_frame_buf_);
             p_frame_buf_ = nullptr;
         }
     }
 
-
-    void capture_loop() {
+    void capture_loop()
+    {
         MV_FRAME_OUT_INFO_EX stInfo;
         memset(&stInfo, 0, sizeof(MV_FRAME_OUT_INFO_EX));
-        
-        while (is_running_ && rclcpp::ok()) {
-            std::unique_lock<std::mutex> lock(camera_mutex_);
-            
-            if (need_reconnect_ || !check_camera_connection()) {
-                lock.unlock();
-                handle_camera_disconnection();
-                continue;
-            }
-
-            int nRet = MV_CC_GetOneFrameTimeout(m_handle_, p_frame_buf_, n_buf_size_, &stInfo, 1000);
-            
-            if (MV_OK == nRet) {
-                reconnect_attempts_ = 0; // 重置重连计数器
+        unsigned int frame_count = 0;
+        int nRet;
+        while (is_running_ && rclcpp::ok()){
+            nRet = MV_CC_GetOneFrameTimeout(m_handle_, p_frame_buf_, n_buf_size_, &stInfo, 300);
+            if (MV_OK == nRet)
+            {
+                frame_count++;
+                if (frame_count % 20 == 0)  // 每20帧打印一次日志
+                {
+                    RCLCPP_INFO(this->get_logger(), "已采集 %d 帧图像", frame_count);
+                }
                 publish_image(p_frame_buf_, stInfo);
-            } 
-            else {
-                RCLCPP_WARN(this->get_logger(), "获取图像失败，错误码: 0x%x", nRet);
-                need_reconnect_ = true;
+                RCLCPP_INFO(this->get_logger(),"此张图片大小为:%d",stInfo.nFrameLen);
+            }
+            else
+            {
+    
+                
+                RCLCPP_WARN(this->get_logger(), "获取图像失败：错误码=0x%x", 
+                       nRet);
             }
         }
     }
-
-    void handle_camera_disconnection() {
-        std::this_thread::sleep_for(reconnect_interval_);
-        
-        std::unique_lock<std::mutex> lock(camera_mutex_);
-        
-        if (reconnect_attempts_ >= max_reconnect_attempts_) {
-            RCLCPP_ERROR(this->get_logger(), "达到最大重连次数，停止尝试");
-            is_running_ = false;
-            return;
-        }
-
-        RCLCPP_INFO(this->get_logger(), "尝试重新连接相机 (%d/%d)", 
-                   reconnect_attempts_+1, max_reconnect_attempts_);
-        
-        stop_camera();
-        if (init_camera() && sync_param_to_camera()) {
-            need_reconnect_ = false;
-            RCLCPP_INFO(this->get_logger(), "相机重新连接成功");
-        } else {
-            reconnect_attempts_++;
-            RCLCPP_WARN(this->get_logger(), "重连失败，将在%d秒后再次尝试", 
-                       reconnect_interval_.count());
-        }
-    }
-
-    bool check_camera_connection() {
-        if (m_handle_ == nullptr) return false;
-        
-        MV_CC_DEVICE_INFO stDevInfo;
-        memset(&stDevInfo, 0, sizeof(MV_CC_DEVICE_INFO));
-        int nRet = MV_CC_GetDeviceInfo(m_handle_, &stDevInfo);
-        
-        if (nRet != MV_OK) {
-            RCLCPP_WARN(this->get_logger(), "检测到相机连接异常");
-            return false;
-        }
-        return true;
-    }
-
 
     void publish_image(unsigned char* data, MV_FRAME_OUT_INFO_EX& info)
     {
@@ -342,7 +299,7 @@ private:
         return true;
     }
 
-    // 私有方法：设置帧率（带范围校验，需停止取流）
+    
     bool set_frame_rate(double fps) {
         if (fps < 1.0 || fps > 60.0) {
             RCLCPP_ERROR(this->get_logger(), "帧率超出范围（1.0~60.0fps）");
@@ -353,15 +310,15 @@ private:
             return false;
         }
 
-        // 改帧率必须先停止取流
+      
         MV_CC_StopGrabbing(m_handle_);
         int nRet = MV_CC_SetFloatValue(m_handle_, "AcquisitionFrameRate", fps);
         if (MV_OK != nRet) {
-            MV_CC_StartGrabbing(m_handle_);  // 失败时恢复取流
+            MV_CC_StartGrabbing(m_handle_);  
             RCLCPP_ERROR(this->get_logger(), "设置帧率失败，错误码：0x%x", nRet);
             return false;
         }
-        MV_CC_StartGrabbing(m_handle_);  // 成功后重启取流
+        MV_CC_StartGrabbing(m_handle_);  
         RCLCPP_INFO(this->get_logger(), "帧率已更新为：%.1ffps", fps);
         return true;
     }
@@ -383,15 +340,15 @@ private:
             return false;
         }
 
-        // 改格式必须先停止取流
+        
         MV_CC_StopGrabbing(m_handle_);
         int nRet = MV_CC_SetEnumValue(m_handle_, "PixelFormat", sdk_type);
         if (MV_OK != nRet) {
-            MV_CC_StartGrabbing(m_handle_);  // 失败时恢复取流
+            MV_CC_StartGrabbing(m_handle_); 
             RCLCPP_ERROR(this->get_logger(), "设置像素格式失败，错误码：0x%x", nRet);
             return false;
         }
-        MV_CC_StartGrabbing(m_handle_);  // 成功后重启取流
+        MV_CC_StartGrabbing(m_handle_);  
         RCLCPP_INFO(this->get_logger(), "像素格式已更新为：%s", format.c_str());
         return true;
     }
