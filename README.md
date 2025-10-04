@@ -5,17 +5,17 @@
 * 自定义了两个param接口，Object  ObjectArray主要是ImgDealer调用Opencv库处理后给出目标轮廓的坐标以及信息(不过目前还给的是像素坐标，未做一些实际坐标)
 ### 功能展示
 ##### ImgDealer节点
-![](/rmv_task04/img/1.png)
+![](./img/1.png)
 ##### Service
-![](/rmv_task04/img/service.png)
+![](./img/service.png)
 ##### Param
-![](/rmv_task04/img/param.png)
+![](./img/param.png)
 ##### Node
-![](/rmv_task04/img/node.png)
+![](./img/node.png)
 ##### rviz2
-![](/rmv_task04/img/rviz2.png)
+![](./img/rviz2.png)
 ##### rqt_graph
-![](/rmv_task04/img/rqt-graph.png)
+![](./img/rqt-graph.png)
 
 
 ### 目录介绍
