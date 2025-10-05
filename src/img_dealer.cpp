@@ -1,4 +1,5 @@
 #include "rclcpp/rclcpp.hpp"
+#include "rmv_task04/msg/detail/object__struct.hpp"
 #include "sensor_msgs/msg/image.hpp"
 #include "cv_bridge/cv_bridge.h"
 #include "opencv2/opencv.hpp"
@@ -19,31 +20,39 @@ public:
         objects_publisher_ = this->create_publisher<rmv_task04::msg::ObjectArray>( 
             "/detected_objects", 10
         );
-
+        cv::namedWindow("Trackbars", 400);
+        cv::createTrackbar("Hue Min", "Trackbars", &hmin, 179);
+        cv::createTrackbar("Hue Max", "Trackbars", &hmax, 179);
+        cv::createTrackbar("Sat Min", "Trackbars", &smin, 255);
+        cv::createTrackbar("Sat Max", "Trackbars", &smax, 255);
+        cv::createTrackbar("Val Min", "Trackbars", &vmin, 255);
+        cv::createTrackbar("Val Max", "Trackbars", &vmax, 255);
         RCLCPP_INFO(this->get_logger(), "deal_img_node 启动成功，开始处理图像...");
     }
 
 private:
+    int hmin = 62,smin=0,vmin=255;
+    int hmax =105,smax=59,vmax=255;
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr image_subscriber_;
     rclcpp::Publisher<rmv_task04::msg::ObjectArray>::SharedPtr objects_publisher_;  
 
     void image_callback(const sensor_msgs::msg::Image::SharedPtr msg)
     {   
+
         RCLCPP_INFO(this->get_logger(), 
             "宽: %d, 高: %d, 编码: %s, 步长: %d, 数据长度: %lu",
             msg->width, msg->height, msg->encoding.c_str(),
             msg->step, msg->data.size());
 
         try
-        {
+        {   
+            
             cv_bridge::CvImagePtr cv_ptr = cv_bridge::toCvCopy(msg, msg->encoding);
             cv::Mat frame = cv_ptr->image;
-
-            cv::imshow("Received Image", frame);
-            cv::waitKey(1);
-
-            rmv_task04::msg::ObjectArray objects_msg;
+            std::vector<rmv_task04::msg::Object> objects = detect_objects(frame);
+            rmv_task04::msg::ObjectArray objects_msg ;
             objects_msg.header = msg->header;
+            objects_msg.objects = objects ;
             objects_publisher_->publish(objects_msg);
         }
         catch (cv_bridge::Exception& e)
@@ -58,21 +67,23 @@ private:
 
 
     
-    std::vector<rmv_task04::msg::Object> detect_objects(cv::Mat& frame)  
+    std::vector<rmv_task04::msg::Object> detect_objects(cv::Mat& img)  
     {
         std::vector<rmv_task04::msg::Object> objects; 
 
-        cv::Mat hsv, mask;
-        cv::cvtColor(frame, hsv, cv::COLOR_BGR2HSV);
-        cv::inRange(hsv, cv::Scalar(0, 120, 70), cv::Scalar(10, 255, 255), mask);  // 红色低阈值
-        cv::inRange(hsv, cv::Scalar(170, 120, 70), cv::Scalar(180, 255, 255), mask);  // 红色高阈值
+        cv::Scalar lower(hmin,smin,vmin);
+        cv::Scalar upper(hmax,smax,vmax);
 
-        cv::Mat kernel = cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(5, 5));
-        cv::morphologyEx(mask, mask, cv::MORPH_CLOSE, kernel);
-        cv::morphologyEx(mask, mask, cv::MORPH_OPEN, kernel);
+        cv::Mat img_gaussblur,img_hsv,img_mask,img_morph;
+        cv::GaussianBlur(img, img_gaussblur, cv::Size(13,13), 7);
+        cv::cvtColor(img_gaussblur, img_hsv, cv::COLOR_BGR2HSV);
+        cv::inRange(img_hsv, lower, upper, img_mask);
+        cv::Mat kernel = getStructuringElement(cv::MORPH_RECT, cv::Size(7,7));
+        morphologyEx(img_mask, img_morph, cv::MORPH_CLOSE, kernel);
         std::vector<std::vector<cv::Point>> contours;
-        cv::findContours(mask, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
-
+        std::vector<cv::Vec4i> hierarchy;
+        std::vector<cv::Rect> rects;
+        findContours(img_morph,contours,hierarchy,cv::RETR_EXTERNAL,cv::CHAIN_APPROX_SIMPLE);
         for (auto& contour : contours){
             double area = cv::contourArea(contour);
             if (area < 500)  
@@ -87,12 +98,13 @@ private:
             obj.height = bbox.height;
             obj.score = 0.9;  // 置信度（模拟）
             objects.push_back(obj);
-            cv::rectangle(frame, bbox, cv::Scalar(0, 255, 0), 2);
-            cv::putText(frame, "red_object", cv::Point(bbox.x, bbox.y-10), 
+            cv::rectangle(img, bbox, cv::Scalar(0, 255, 0), 2);
+            cv::putText(img, "red_object", cv::Point(bbox.x, bbox.y-10), 
                        cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0, 255, 0), 2);
         }
 
-        cv::imshow("Processed Image", frame);
+        cv::imshow("img_raw Image", img);
+        cv::imshow("img_morph",img_morph);
         cv::waitKey(1);  
 
         return objects;

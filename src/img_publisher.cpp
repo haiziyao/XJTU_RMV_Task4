@@ -201,7 +201,7 @@ private:
             RCLCPP_INFO(this->get_logger(), "相机重新连接成功");
         } else {
             reconnect_attempts_++;
-            RCLCPP_WARN(this->get_logger(), "重连失败，将在%d秒后再次尝试", 
+            RCLCPP_WARN(this->get_logger(), "重连失败，将在%ld秒后再次尝试", 
                        reconnect_interval_.count());
         }
     }
