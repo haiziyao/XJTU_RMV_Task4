@@ -63,6 +63,7 @@ private:
     std::atomic<bool> is_running_{false};
     rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr 
         on_parameters_set_callback_handle_;
+    bool frame_rate_priority = true ;
     
     bool init_camera()
     {
@@ -93,6 +94,11 @@ private:
             MV_CC_DestroyHandle(m_handle_);
             return false;
         }
+        if (frame_rate_priority) {
+            if (!set_operation_mode(true)) {  // true表示帧率优先
+                RCLCPP_WARN(this->get_logger(), "警告：无法切换到帧率优先模式，帧率可能仍受曝光控制");
+            }
+        }
         nRet = MV_CC_StartGrabbing(m_handle_);
         if (MV_OK != nRet){
             RCLCPP_ERROR(this->get_logger(), "开始取流失败，错误码: 0x%x", nRet);
@@ -117,6 +123,14 @@ private:
             return false;
         }
 
+        MV_CC_SetEnumValue(m_handle_, "TriggerMode", MV_TRIGGER_MODE_OFF);
+        MV_CC_SetEnumValue(m_handle_, "AcquisitionMode", MV_ACQ_MODE_CONTINUOUS);
+    
+        // 禁用所有自动模式
+        MV_CC_SetEnumValue(m_handle_, "ExposureAuto", MV_EXPOSURE_AUTO_MODE_OFF);
+    
+        // 启用帧率控制
+        MV_CC_SetBoolValue(m_handle_, "AcquisitionFrameRateEnable", true);
         RCLCPP_INFO(this->get_logger(), "相机初始化成功");
         return true;
     }
@@ -413,8 +427,8 @@ private:
     }
 
     bool set_exposure_time(double exposure) {
-        if (exposure < 10.0 || exposure > 1000000.0) {
-            RCLCPP_ERROR(this->get_logger(), "曝光时间超出范围（10~1000000μs）");
+        if (exposure < 0.0 || exposure > 1000000.0) {
+            RCLCPP_ERROR(this->get_logger(), "曝光时间超出范围（0~1000000μs）");
             return false;
         }
         if (m_handle_ == nullptr) {
@@ -431,7 +445,37 @@ private:
     }
     
 
-    
+    bool set_operation_mode(bool frame_rate_priority) {
+        int nRet;
+        nRet = MV_CC_SetEnumValue(m_handle_, "ExposureAuto", 0);  // 0=关闭自动曝光
+        if (nRet != MV_OK) {
+            RCLCPP_ERROR(this->get_logger(), "关闭自动曝光失败，错误码:0x%x", nRet);
+            return false;
+        }
+
+        // 2. 关闭触发模式（确保连续采集）
+        nRet = MV_CC_SetEnumValue(m_handle_, "TriggerMode", 0);  // 0=连续模式
+        if (nRet != MV_OK) {
+            RCLCPP_ERROR(this->get_logger(), "关闭触发模式失败，错误码:0x%x", nRet);
+            return false;
+        }
+
+        if (frame_rate_priority) {
+            // 尝试多种参数名（不同相机兼容性）
+            nRet = MV_CC_SetEnumValue(m_handle_, "FrameRatePriority", 1);  // 1=帧率优先
+            if (nRet != MV_OK) {
+                RCLCPP_WARN(this->get_logger(), "尝试FrameRatePriority失败，错误码:0x%x", nRet);
+                nRet = MV_CC_SetEnumValue(m_handle_, "ExposureFrameRatePriority", 1);
+                if (nRet != MV_OK) {
+                    RCLCPP_WARN(this->get_logger(), "尝试ExposureFrameRatePriority失败，错误码:0x%x", nRet);
+                }
+            }
+        }
+
+        RCLCPP_INFO(this->get_logger(), "已切换到%s模式", 
+                   frame_rate_priority ? "帧率优先" : "曝光优先");
+        return true;
+    }
 };
 
 int main(int argc,char **argv){
