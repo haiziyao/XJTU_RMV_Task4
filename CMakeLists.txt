@@ -22,6 +22,19 @@ find_package(OpenCV REQUIRED)       # 基于指定路径查找 OpenCV（4.5d 版
 find_package(Ceres REQUIRED)        # Ceres 优化库依赖
 find_package(rosidl_default_generators REQUIRED)  # 自定义消息生成依赖
 
+# 查找 ONNX Runtime 头文件和库
+find_path(ONNX_RUNTIME_INCLUDE_DIR onnxruntime_cxx_api.h
+  HINTS /usr/include/onnxruntime /usr/local/include/onnxruntime
+)
+find_library(ONNX_RUNTIME_LIB onnxruntime
+  HINTS /usr/lib /usr/local/lib
+)
+# 未找到则报错
+if(NOT ONNX_RUNTIME_INCLUDE_DIR OR NOT ONNX_RUNTIME_LIB)
+  message(FATAL_ERROR "ONNX Runtime 未找到！请安装或指定路径。")
+endif()
+
+
 # 链接海康 SDK 库路径（相机节点需要）
 link_directories(${HIKVISION_SDK_LIB_DIR})
 
@@ -76,12 +89,19 @@ ament_target_dependencies(ImgDealer
   cv_bridge
   OpenCV
   std_msgs
+  
 )
+target_include_directories(ImgDealer PRIVATE
+  ${OpenCV_INCLUDE_DIRS}
+  ${ONNX_RUNTIME_INCLUDE_DIR}  # 新增 ONNX Runtime 头文件路径
+)
+
 
 rosidl_get_typesupport_target(cpp_typesupport_target ${PROJECT_NAME} "rosidl_typesupport_cpp")
 target_link_libraries(ImgDealer
   ${cpp_typesupport_target}  # 自定义消息的 C++ 类型支持库
   ${OpenCV_LIBS}             # 正确的 OpenCV 库变量（修复原错误 ${OpenCV_LIB}）
+  ${ONNX_RUNTIME_INCLUDE_DIR}
 )
 
 

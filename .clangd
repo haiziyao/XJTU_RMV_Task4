@@ -16,6 +16,8 @@ CompileFlags:
     # Tesseract与Leptonica配置
     - -I/usr/include/tesseract              # Tesseract OCR头文件
     - -I/usr/include/leptonica              # Leptonica头文件
+    # ONNX Runtime 配置（新增）
+    - -I/usr/local/onnxruntime/include 
     # 标准库路径（确保std命名空间正常识别）
     - -I/usr/include/c++/11
     - -I/usr/include/x86_64-linux-gnu/c++/11

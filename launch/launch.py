@@ -23,7 +23,7 @@ def generate_launch_description():
     )
     declare_exposure_time_arg = DeclareLaunchArgument(
         'exposure_time',
-        default_value='4000.0',
+        default_value='30000.0',
         description='曝光时间（μs）'
     )
     declare_gain_arg = DeclareLaunchArgument(

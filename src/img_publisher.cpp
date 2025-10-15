@@ -235,25 +235,35 @@ private:
     }
 
 
-    void publish_image(unsigned char* data, MV_FRAME_OUT_INFO_EX& info)
+     void publish_image(unsigned char* data, MV_FRAME_OUT_INFO_EX& info)
     {
         cv::Mat img;
+        std::string encoding;
+        
         switch (info.enPixelType)
         {
             case PixelType_Gvsp_RGB8_Packed:
                 img = cv::Mat(info.nHeight, info.nWidth, CV_8UC3, data);
                 cv::cvtColor(img, img, cv::COLOR_RGB2BGR);  // 转换为OpenCV的BGR格式
+                encoding = "bgr8";
                 break;
             case PixelType_Gvsp_Mono8:
                 img = cv::Mat(info.nHeight, info.nWidth, CV_8UC1, data);
+                encoding = "mono8";
+                break;
+            case 17301513:  // YUV420格式处理修正
+                img = cv::Mat(info.nHeight * 3 / 2, info.nWidth, CV_8UC1, data);
+                cv::cvtColor(img, img, cv::COLOR_YUV2BGR_NV12);
+                encoding = "bgr8";
                 break;
             default:
                 RCLCPP_WARN(this->get_logger(), "不支持的像素格式: %ld", info.enPixelType);
                 return;
         }
+        
         auto msg = cv_bridge::CvImage(
             std_msgs::msg::Header(),
-            (info.enPixelType == PixelType_Gvsp_RGB8_Packed) ? "bgr8" : "mono8",
+            encoding,
             img
         ).toImageMsg();
         
@@ -261,6 +271,8 @@ private:
         msg->header.frame_id = "camera_link";
         image_publisher_->publish(*msg);
     }
+
+
     void declare_camera_parameters()
     {
         this->declare_parameter("camera_ip", "");  // 默认空（自动枚举），可传192.168.1.100
@@ -355,8 +367,8 @@ private:
 
     }
     bool set_gain(double gain) {
-        if (gain < 1.0 || gain > 10.0) {
-            RCLCPP_ERROR(this->get_logger(), "增益超出范围（1.0~10.0）");
+        if (gain < 1.0 || gain > 30.0) {
+            RCLCPP_ERROR(this->get_logger(), "增益超出范围（1.0~30.0）");
             return false;
         }
         if (m_handle_ == nullptr) {
@@ -373,25 +385,19 @@ private:
     }
 
     // 私有方法：设置帧率（带范围校验，需停止取流）
-    bool set_frame_rate(double fps) {
-        if (fps < 1.0 || fps > 600.0) {
-            RCLCPP_ERROR(this->get_logger(), "帧率超出范围（1.0~600.0fps）");
-            return false;
-        }
+   bool set_frame_rate(double fps) {
         if (m_handle_ == nullptr) {
             RCLCPP_ERROR(this->get_logger(), "相机未初始化，无法设置帧率");
             return false;
         }
 
-        // 改帧率必须先停止取流
-        MV_CC_StopGrabbing(m_handle_);
+        // 直接设置帧率，不停止取流（保持流畅性）
         int nRet = MV_CC_SetFloatValue(m_handle_, "AcquisitionFrameRate", fps);
         if (MV_OK != nRet) {
-            MV_CC_StartGrabbing(m_handle_);  // 失败时恢复取流
             RCLCPP_ERROR(this->get_logger(), "设置帧率失败，错误码：0x%x", nRet);
             return false;
         }
-        MV_CC_StartGrabbing(m_handle_);  // 成功后重启取流
+        
         RCLCPP_INFO(this->get_logger(), "帧率已更新为：%.1ffps", fps);
         return true;
     }
